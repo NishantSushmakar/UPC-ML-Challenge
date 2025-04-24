@@ -6,6 +6,9 @@ import numpy as np
 from feature_creation import *
 from model_dispatcher import models
 from sklearn.preprocessing import MinMaxScaler
+import sys
+import os
+from datetime import datetime
 
 def zero_one_loss(y_true, y_pred):
     """
@@ -40,7 +43,7 @@ def create_groupkfolds(df, n_folds, group_col):
     return df
 
 
-def run_folds(df,fold,model):
+def run_folds(df, fold, model):
 
     df_train = df[df.kfold!=fold].reset_index(drop=True)
     df_valid = df[df.kfold==fold].reset_index(drop=True)
@@ -132,101 +135,100 @@ def run_folds(df,fold,model):
     
     return train_precision, train_recall, train_f1_score, train_roc_auc_score,train_zero_one_loss,train_log_loss,\
             valid_precision, valid_recall, valid_f1_score, valid_roc_auc_score,valid_zero_one_loss,valid_log_loss
-            
 
-    
+class OutputRedirector:
+    def __init__(self, filename, mode='w'):
+        self.terminal = sys.stdout
+        self.log_file = open(filename, mode)
 
-def train_model(model_name,n_folds):
-
-    print("Loading the data")
-    df = pd.read_csv(config.TRAINING_DATA_PATH)
-    df = create_groupkfolds(df,n_folds,'sentence')
-    print("Loaded and Folds created sucessfully!!!")
-    
-
-    
-
-    train_p = []
-    train_r = []
-    train_f1 = []
-    train_auc = []
-    train_zol = []
-    train_lloss = []
-    val_p = []
-    val_r = []
-    val_f1 = []
-    val_auc = []
-    val_zol = []
-    val_lloss = []
-    
-    for i in range(n_folds):
-
-        tp, tr, tf1,tauc,tzol,tlloss, vp, vr, vf1, vauc,vzol,vlloss= run_folds(df,i,model_name)
+    def write(self, message):
+        self.terminal.write(message)
+        self.log_file.write(message)
         
-        train_p.append(tp)
-        train_r.append(tr)
-        train_f1.append(tf1)
-        train_auc.append(tauc)
-        train_zol.append(tzol)
-        train_lloss.append(tlloss)
-        val_p.append(vp)
-        val_r.append(vr)
-        val_f1.append(vf1)
-        val_auc.append(vauc)
-        val_zol.append(vzol)
-        val_lloss.append(vlloss)
+    def flush(self):
+        self.terminal.flush()
+        self.log_file.flush()
+        
+    def close(self):
+        self.log_file.close()
+
+def train_model(model_name, n_folds, log_file=None):
+    # Create log file with timestamp if not provided
+    if log_file is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_file = f"model_training_{model_name}_{timestamp}.log"
     
+    # Create output redirector
+    redirector = OutputRedirector(log_file)
+    sys.stdout = redirector
     
-    
+    try:
+        print(f"Training model: {model_name} with {n_folds} folds")
+        print(f"Log file: {log_file}")
+        print("Training started at:", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        print("-" * 80)
 
-    print("*"*15,"Final Summary","*"*15)
+        print("Loading the data")
+        df = pd.read_csv(config.TRAINING_DATA_PATH)
+        df = create_groupkfolds(df, n_folds, 'sentence')
+        print("Loaded and Folds created successfully!!!")
+        
+        train_p = []
+        train_r = []
+        train_f1 = []
+        train_auc = []
+        train_zol = []
+        train_lloss = []
+        val_p = []
+        val_r = []
+        val_f1 = []
+        val_auc = []
+        val_zol = []
+        val_lloss = []
+        
+        for i in range(n_folds):
+            tp, tr, tf1, tauc, tzol, tlloss, vp, vr, vf1, vauc, vzol, vlloss = run_folds(df, i, model_name)
+            
+            train_p.append(tp)
+            train_r.append(tr)
+            train_f1.append(tf1)
+            train_auc.append(tauc)
+            train_zol.append(tzol)
+            train_lloss.append(tlloss)
+            val_p.append(vp)
+            val_r.append(vr)
+            val_f1.append(vf1)
+            val_auc.append(vauc)
+            val_zol.append(vzol)
+            val_lloss.append(vlloss)
+        
+        print("*"*15,"Final Summary","*"*15)
 
-    print(f"average training precision:{np.array(train_p).mean()}",f"std training precision:{np.array(train_p).std()}")
-    print(f"average training recall:{np.array(train_r).mean()}",f"std training recall:{np.array(train_r).std()}")
-    print(f"average training f1:{np.array(train_f1).mean()}",f"std training f1:{np.array(train_f1).std()}")
-    print(f"average training auc:{np.array(train_auc).mean()}",f"std training auc:{np.array(train_auc).std()}")
-    print(f"average training zero one loss:{np.array(train_zol).mean()}",f"std training zero one loss:{np.array(train_zol).std()}")
-    print(f"average training log loss:{np.array(train_lloss).mean()}",f"std training log loss:{np.array(train_lloss).std()}")
+        print(f"average training precision:{np.array(train_p).mean()}",f"std training precision:{np.array(train_p).std()}")
+        print(f"average training recall:{np.array(train_r).mean()}",f"std training recall:{np.array(train_r).std()}")
+        print(f"average training f1:{np.array(train_f1).mean()}",f"std training f1:{np.array(train_f1).std()}")
+        print(f"average training auc:{np.array(train_auc).mean()}",f"std training auc:{np.array(train_auc).std()}")
+        print(f"average training zero one loss:{np.array(train_zol).mean()}",f"std training zero one loss:{np.array(train_zol).std()}")
+        print(f"average training log loss:{np.array(train_lloss).mean()}",f"std training log loss:{np.array(train_lloss).std()}")
 
-
-    print(f"average validation precision:{np.array(val_p).mean()}",f"std validation precision:{np.array(val_p).std()}")
-    print(f"average validation recall:{np.array(val_r).mean()}",f"std validation recall:{np.array(val_r).std()}")
-    print(f"average validation f1:{np.array(val_f1).mean()}",f"std validation f1:{np.array(val_f1).std()}")
-    print(f"average validation auc:{np.array(val_auc).mean()}",f"std validation f1:{np.array(val_auc).std()}")
-    print(f"average validation zero one loss:{np.array(val_zol).mean()}",f"std validation zero one loss:{np.array(val_zol).std()}")
-    print(f"average validation log loss:{np.array(val_lloss).mean()}",f"std validation log loss:{np.array(val_lloss).std()}")
+        print(f"average validation precision:{np.array(val_p).mean()}",f"std validation precision:{np.array(val_p).std()}")
+        print(f"average validation recall:{np.array(val_r).mean()}",f"std validation recall:{np.array(val_r).std()}")
+        print(f"average validation f1:{np.array(val_f1).mean()}",f"std validation f1:{np.array(val_f1).std()}")
+        print(f"average validation auc:{np.array(val_auc).mean()}",f"std validation f1:{np.array(val_auc).std()}")
+        print(f"average validation zero one loss:{np.array(val_zol).mean()}",f"std validation zero one loss:{np.array(val_zol).std()}")
+        print(f"average validation log loss:{np.array(val_lloss).mean()}",f"std validation log loss:{np.array(val_lloss).std()}")
+        
+        print("-" * 80)
+        print("Training completed at:", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        
+    finally:
+        # Reset stdout and close log file
+        sys.stdout = sys.__stdout__
+        redirector.close()
+        print(f"Log file saved to: {os.path.abspath(log_file)}")
 
 
 if __name__ == "__main__":
-
-    train_model('mnb',5)
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # You can specify a custom log file name or let it create one automatically
+    # train_model('mnb', 5, "custom_log_file.log")
+    train_model('lr', 5) 
