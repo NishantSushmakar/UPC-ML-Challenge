@@ -9,6 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 import sys
 import os
 from datetime import datetime
+import joblib
 
 def zero_one_loss(y_true, y_pred):
     """
@@ -48,14 +49,17 @@ def run_folds(df, fold, model):
     df_train = df[df.kfold!=fold].reset_index(drop=True)
     df_valid = df[df.kfold==fold].reset_index(drop=True)
 
+    if not os.path.exists(f'../resources/{model}'):
+        os.makedirs(f'../resources/{model}')
+    
 
     feature_pipeline = Pipeline(steps=[
                 ("Language Features",LanguageFeature()),
                 ("Graph Features",GraphFeatures()),
                 ("Node Features",NodeFeatures()),
                 ("Dataset Creation",FormatDataFrame()),
-                ("Language One Hot Encoding",LanguageOHE(enc_lan=f"lan_encoder_{model}_{fold}.pkl",\
-                                                         enc_lan_family=f"lan_family_encoder_{model}_{fold}.pkl"))  
+                ("Language One Hot Encoding",LanguageOHE(enc_lan=f"{model}/lan_encoder_{model}_{fold}.pkl",\
+                                                         enc_lan_family=f"{model}/lan_family_encoder_{model}_{fold}.pkl"))  
             ])
     
 
@@ -68,8 +72,6 @@ def run_folds(df, fold, model):
     
 
     x_valid_data = valid_data.drop(columns=config.TRAIN_DROP_COLS)
-
-    
     y_valid_data = valid_data.is_root.values
 
     
@@ -80,9 +82,10 @@ def run_folds(df, fold, model):
         scaler = MinMaxScaler()
         x_train_data = scaler.fit_transform(x_train_data)
         x_valid_data = scaler.transform(x_valid_data)
+        joblib.dump(scaler,os.path.join(config.ONE_HOT_ENCODER_LANGUAGE,f'{model}/scaler_{model}_{fold}.pkl'))
 
     clf.fit(x_train_data,y_train_data)
-
+    joblib.dump(clf,os.path.join(config.ONE_HOT_ENCODER_LANGUAGE,f'{model}/{model}_{fold}.pkl'))
 
     y_train_pred = clf.predict(x_train_data)
     y_valid_pred = clf.predict(x_valid_data)
@@ -156,7 +159,7 @@ def train_model(model_name, n_folds, log_file=None):
     # Create log file with timestamp if not provided
     if log_file is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_file = f"model_training_{model_name}_{timestamp}.log"
+        log_file = f"../results/model_training_{model_name}_{timestamp}.log"
     
     # Create output redirector
     redirector = OutputRedirector(log_file)

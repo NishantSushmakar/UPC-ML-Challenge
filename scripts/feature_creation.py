@@ -238,7 +238,7 @@ class FormatDataFrame(BaseEstimator,TransformerMixin):
         final_df = []
 
 
-        if check and y is not None:
+        if check and (y is not None):
             for i in range(X.shape[0]):
                 final_df.append(self.extract_features(lst=X.loc[i],y=y[i],check=check))
         elif check:
@@ -269,12 +269,13 @@ class FormatDataFrame(BaseEstimator,TransformerMixin):
         print("DataFrame Creation Started")
         df = self.graph_features_extract(df)
         if 'root' in df.columns:
+            
             X = df.drop(columns=['edgelist','root']) 
             y = df['root'].values
-            main_data = self.create_data(X,y,True)
+            main_data = self.create_data(X,y=y,check=True)
         else:
             X = df.drop(columns=['edgelist']) 
-            main_data = self.create_data(X,True)
+            main_data = self.create_data(X,y=None,check=True)
         print("DataFrame Creation Ended!!")
 
         return main_data

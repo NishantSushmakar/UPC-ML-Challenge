@@ -64,7 +64,14 @@ LANGUAGE_TO_GROUP = {
 }
 
 
-TRAIN_DROP_COLS = ['sentence','is_root','node_number','language','language_group']
+TRAIN_DROP_COLS = ['sentence','is_root','node_number','language','language_group',
+                   'graph_num_edges','neighbor_degree_mean','radiality',\
+                   'graph_avg_path_length','graph_diameter','graph_density','graph_average_degree',\
+                   'num_subtrees_removed','current_flow_betweenness','load_centrality','current_flow_closeness',\
+                    'effective_size','num_subtrees_removed','comm_betweenness','page_cent','subgraph_cent',\
+                    'avg_shortest_path_length','number_of_nodes','largest_component_removed','katz_cent',\
+                    'closeness_cent','information_cent']
+TEST_DROP_COLS = ['sentence','node_number','language','language_group','id']
 
 
 
