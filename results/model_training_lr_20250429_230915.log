@@ -1,0 +1,11 @@
+Training model: lr with 5 folds
+Log file: ../results/model_training_lr_20250429_230915.log
+Training started at: 2025-04-29 23:09:15
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started

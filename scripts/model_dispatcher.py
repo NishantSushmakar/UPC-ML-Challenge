@@ -9,6 +9,7 @@ models = {
 
     'mnb':MultinomialNB(),
     'lgbm':lgb.LGBMClassifier(n_estimator=1000, verbose=-1,random_state=42),
-    'lr':LogisticRegression(random_state=42)
+    'lr':LogisticRegression(random_state=42),
+    'xgb':XGBClassifier(verbose=0)
 
 }

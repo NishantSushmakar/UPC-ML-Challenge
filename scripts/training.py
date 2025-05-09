@@ -10,6 +10,8 @@ import sys
 import os
 from datetime import datetime
 import joblib
+import networkx as nx
+
 
 def zero_one_loss(y_true, y_pred):
     """
@@ -44,6 +46,60 @@ def create_groupkfolds(df, n_folds, group_col):
     return df
 
 
+def run_folds_iso(df,fold):
+
+    df_train = df[df.kfold!=fold].reset_index(drop=True)
+    df_valid = df[df.kfold==fold].reset_index(drop=True)
+
+    df_train['edgelist'] = df_train['edgelist'].apply(ast.literal_eval)
+    df_valid['edgelist'] = df_valid['edgelist'].apply(ast.literal_eval)
+
+    
+    df_train['graph'] = df_train['edgelist'].apply(lambda edges: nx.from_edgelist(edges))
+    df_valid['graph'] = df_valid['edgelist'].apply(lambda edges: nx.from_edgelist(edges))
+
+    df_valid['predicted_iso_root'] = -1
+    
+    for i,valid_row in df_valid.iterrows():
+
+        iso_count_dict = {}
+        for j, train_row in df_train.iterrows():
+
+            G1  = train_row['graph']
+            G2 = valid_row['graph']
+            
+            GM = nx.isomorphism.GraphMatcher(G1, G2)
+
+            if GM.is_isomorphic():
+                
+                root = GM.mapping[train_row['root']] 
+
+                if root in iso_count_dict.keys():
+                    iso_count_dict[root] += 1
+                else:
+                    iso_count_dict[root] = 1
+
+        pred_root = -1
+
+        if len(iso_count_dict) > 0:
+
+ 
+            count = 0
+
+            for key,value in iso_count_dict.items():
+
+                if value > count : 
+                    pred_root = key
+                    count = value 
+
+
+        df_valid.loc[i,'predicted_iso_root'] = pred_root
+
+    df_valid = df_valid.drop(columns=['graph'])
+    
+    return df_valid
+          
+
 def run_folds(df, fold, model):
 
     df_train = df[df.kfold!=fold].reset_index(drop=True)
@@ -59,18 +115,18 @@ def run_folds(df, fold, model):
                 ("Node Features",NodeFeatures()),
                 ("Dataset Creation",FormatDataFrame()),
                 ("Language One Hot Encoding",LanguageOHE(enc_lan=f"{model}/lan_encoder_{model}_{fold}.pkl",\
-                                                         enc_lan_family=f"{model}/lan_family_encoder_{model}_{fold}.pkl"))  
+                                                         enc_lan_family=f"{model}/lan_family_encoder_{model}_{fold}.pkl"))
             ])
     
 
-    train_data = feature_pipeline.fit_transform(df_train)
+    train_data = feature_pipeline.fit_transform(df_train) 
     valid_data = feature_pipeline.transform(df_valid)
     
     
     x_train_data = train_data.drop(columns=config.TRAIN_DROP_COLS)
     y_train_data = train_data.is_root.values
     
-
+    
     x_valid_data = valid_data.drop(columns=config.TRAIN_DROP_COLS)
     y_valid_data = valid_data.is_root.values
 
@@ -86,6 +142,7 @@ def run_folds(df, fold, model):
 
     clf.fit(x_train_data,y_train_data)
     joblib.dump(clf,os.path.join(config.ONE_HOT_ENCODER_LANGUAGE,f'{model}/{model}_{fold}.pkl'))
+    
 
     y_train_pred = clf.predict(x_train_data)
     y_valid_pred = clf.predict(x_valid_data)
@@ -97,18 +154,26 @@ def run_folds(df, fold, model):
     ### Predicting the roots for the classes
     train_data['prediction_probability'] = y_train_proba
     valid_data['prediction_probability'] = y_valid_proba
+
+    print("Validation Data Median Probability",valid_data.groupby(by = ['sentence','language'])['prediction_probability'].max().median())
+    print("Validation Data Average Probability",valid_data.groupby(by = ['sentence','language'])['prediction_probability'].max().mean())
+    
     
     train_max_rows = train_data.loc[train_data.groupby(by = ['sentence','language'])['prediction_probability'].idxmax()]
-    train_result = train_max_rows[['sentence','language','node_number']]
+    train_result = train_max_rows[['sentence','language','node_number','prediction_probability']]
     train_result = train_result.rename(columns={'node_number':'predicted_root'})
     
 
     valid_max_rows = valid_data.loc[valid_data.groupby(by = ['sentence','language'])['prediction_probability'].idxmax()]
-    valid_result = valid_max_rows[['sentence','language','node_number']]
+    valid_result = valid_max_rows[['sentence','language','node_number','prediction_probability']]
     valid_result = valid_result.rename(columns={'node_number':'predicted_root'})
 
     df_train = pd.merge(df_train,train_result,on=['sentence','language'],how='inner')
     df_valid = pd.merge(df_valid,valid_result,on=['sentence','language'],how='inner')
+
+    
+
+    
 
     train_zero_one_loss = zero_one_loss(df_train['root'],df_train['predicted_root'])    
     valid_zero_one_loss = zero_one_loss(df_valid['root'],df_valid['predicted_root'])
@@ -190,6 +255,7 @@ def train_model(model_name, n_folds, log_file=None):
         val_lloss = []
         
         for i in range(n_folds):
+            
             tp, tr, tf1, tauc, tzol, tlloss, vp, vr, vf1, vauc, vzol, vlloss = run_folds(df, i, model_name)
             
             train_p.append(tp)
@@ -234,4 +300,4 @@ def train_model(model_name, n_folds, log_file=None):
 if __name__ == "__main__":
     # You can specify a custom log file name or let it create one automatically
     # train_model('mnb', 5, "custom_log_file.log")
-    train_model('lr', 5) 
+    train_model('lgbm', 5) 

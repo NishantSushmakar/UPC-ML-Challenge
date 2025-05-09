@@ -35,7 +35,27 @@ NODE_FEATURES = [
     "neighbor_degree_mean",
     "neighbor_degree_max",
     "neighbor_degree_min",
-    "num_leaf_neighbors"
+    "num_leaf_neighbors",
+    "node_step_removal",
+    "max_height",
+    'avg_distance_to_all_nodes',
+    'max_distance_to_any_node',
+    'avg_distance_to_leaf_nodes',
+    'std_distance_to_leaf_nodes',
+    'distance_to_farthest_leaf',
+    'max_subtree_size',
+    'min_subtree_size',
+    'subtree_size_balance',
+    'num_subtrees',
+    'subtree_size_std',
+    'max_subtree_depth',
+    'min_subtree_depth',
+    'subtree_depth_balance',
+    'subtree_depth_std',
+    'is_centroid',
+    'D',
+    'C',
+    'D_prime'
 ]
 
 
@@ -64,14 +84,112 @@ LANGUAGE_TO_GROUP = {
 }
 
 
+LANGUAGE_TO_GROUP_NEW = {
+    "Arabic": "Afro-Asiatic",
+    "Indonesian": "Austronesian",
+    "Korean": "Koreanic",
+    "Czech": "Indo-European",
+    "English": "Indo-European",
+    "French": "Indo-European",
+    "Galician": "Indo-European",
+    "German": "Indo-European",
+    "Hindi": "Indo-European",
+    "Icelandic": "Indo-European",
+    "Italian": "Indo-European",
+    "Polish": "Indo-European",
+    "Portuguese": "Indo-European",
+    "Russian": "Indo-European",
+    "Spanish": "Indo-European",
+    "Swedish": "Indo-European",
+    "Japanese": "Japonic",
+    "Chinese": "Sino-Tibetan",
+    "Thai": "Tai-Kadai",
+    "Turkish": "Turkic",
+    "Finnish": "Uralic"
+}
+
+DOMINANT_ORDER_GROUPED = {
+    "VSO": ["Arabic"],
+    "SVO": [
+        "Indonesian", "Czech", "English", "French", "Galician",
+        "German", "Icelandic", "Italian", "Polish", "Portuguese",
+        "Russian", "Spanish", "Swedish", "Chinese", "Thai", "Finnish"
+    ],
+    "SOV": ["Korean", "Hindi", "Japanese", "Turkish", "German"]
+}
+
 TRAIN_DROP_COLS = ['sentence','is_root','node_number','language','language_group',
-                   'graph_num_edges','neighbor_degree_mean','radiality',\
-                   'graph_avg_path_length','graph_diameter','graph_density','graph_average_degree',\
-                   'num_subtrees_removed','current_flow_betweenness','load_centrality','current_flow_closeness',\
-                    'effective_size','num_subtrees_removed','comm_betweenness','page_cent','subgraph_cent',\
-                    'avg_shortest_path_length','number_of_nodes','largest_component_removed','katz_cent',\
-                    'closeness_cent','information_cent']
-TEST_DROP_COLS = ['sentence','node_number','language','language_group','id']
+                   'information_cent','current_flow_closeness',
+                   'avg_shortest_path_length',
+ 'eccentricity',
+ 'degree_cent',
+ 'load_centrality',
+ 'comm_betweenness',
+ 'betweeness_cent',
+ 'katz_cent',
+ 'degree',
+ 'effective_size',
+ 'num_subtrees_removed',
+ 'num_subtrees',
+ 'largest_component_removed',
+ 'max_subtree_size',
+ 'subtree_size_std',
+ 'max_height',
+ 'max_distance_to_any_node',
+ 'distance_to_farthest_leaf',
+ 'max_subtree_depth',
+ 'avg_distance_to_all_nodes',
+ 'min_subtree_size',
+ 'subtree_depth_balance',
+ 'subtree_size_balance',
+ 'graph_num_edges',
+ 'graph_avg_path_length',
+ 'graph_average_degree',
+ 'language_group_Semitic',
+ 'language_Chinese',
+ 'language_group_Uralic',
+ 'language_group_Indo-Aryan',
+ 'language_group_Austronesian',
+ 'language_group_Japonic',
+ 'language_group_Koreanic',
+ 'language_group_Kra-Dai',
+ 'language_group_Turkic']
+
+TEST_DROP_COLS = ['sentence','node_number','language','language_group','id',
+                  'information_cent','current_flow_closeness',
+                   'avg_shortest_path_length','eccentricity',
+ 'degree_cent',
+ 'load_centrality',
+ 'comm_betweenness',
+ 'betweeness_cent',
+ 'katz_cent',
+ 'degree',
+ 'effective_size',
+ 'num_subtrees_removed',
+ 'num_subtrees',
+ 'largest_component_removed',
+ 'max_subtree_size',
+ 'subtree_size_std',
+ 'max_height',
+ 'max_distance_to_any_node',
+ 'distance_to_farthest_leaf',
+ 'max_subtree_depth',
+ 'avg_distance_to_all_nodes',
+ 'min_subtree_size',
+ 'subtree_depth_balance',
+ 'subtree_size_balance',
+ 'graph_num_edges',
+ 'graph_avg_path_length',
+ 'graph_average_degree',
+ 'language_group_Semitic',
+ 'language_Chinese',
+ 'language_group_Uralic',
+ 'language_group_Indo-Aryan',
+ 'language_group_Austronesian',
+ 'language_group_Japonic',
+ 'language_group_Koreanic',
+ 'language_group_Kra-Dai',
+ 'language_group_Turkic']
 
 
 

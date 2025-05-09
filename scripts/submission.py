@@ -17,7 +17,7 @@ def test_prediction(test_df,best_model, best_fold):
             ])
     
 
-    i
+    
 
     test_data_start = feature_pipeline.transform(test_df)
     test_data = test_data_start.drop(columns=config.TEST_DROP_COLS)
@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     test_df = pd.read_csv(config.TEST_DATA_PATH)
     best_model = 'lgbm'
-    best_fold = 0
+    best_fold = 4
     test_prediction(test_df,best_model,best_fold)
 
 
