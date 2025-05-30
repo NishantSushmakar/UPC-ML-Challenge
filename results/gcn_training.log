@@ -1,0 +1,33 @@
+Training GCN model with 5 folds
+Log file: ../results/gcn_training.log
+Training started at: 2025-05-23 13:12:11
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+
+Processing fold 0
+Preparing graph data from 8400 rows...
+Successfully prepared 8400 graphs
+Preparing graph data from 2100 rows...
+Successfully prepared 2100 graphs
+Training data size: 8400
+Validation data size: 2100
+Using device: cpu
+Initializing model...
+Number of node features: 2
+Model initialized successfully
+Optimizer initialized successfully
+Starting training for 100 epochs...
+
+Epoch 1/100
+Processed 0/8400 training graphs
+Processed 1000/8400 training graphs
+Processed 2000/8400 training graphs
+Processed 3000/8400 training graphs
+Processed 4000/8400 training graphs
+Processed 5000/8400 training graphs
+Processed 6000/8400 training graphs
+Processed 7000/8400 training graphs
+Processed 8000/8400 training graphs
+Processed 0/2100 validation graphs
+Processed 1000/2100 validation graphs

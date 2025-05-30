@@ -70,15 +70,17 @@ class GraphFeatures(BaseEstimator, TransformerMixin):
         return self
     
     def fit_transform(self,df,y=None):
-        df['edgelist'] = df['edgelist'].apply(ast.literal_eval)
         print("Graph Features Creation Started")
+        # Check if edgelist is already a list of tuples
+        df['edgelist'] = df['edgelist'].apply(lambda x: x if isinstance(x, list) else ast.literal_eval(x))
         df['graph_features'] = df['edgelist'].apply(lambda x:self.create_graph_features(x))
         print("Graph Feature Creation Ended")
         return df
     
     def transform(self,df):
-        df['edgelist'] = df['edgelist'].apply(ast.literal_eval)
         print("Graph Features Creation Started")
+        # Check if edgelist is already a list of tuples
+        df['edgelist'] = df['edgelist'].apply(lambda x: x if isinstance(x, list) else ast.literal_eval(x))
         df['graph_features'] = df['edgelist'].apply(lambda x:self.create_graph_features(x))
         print("Graph Feature Creation Ended")
         return df
@@ -144,6 +146,7 @@ class NodeFeatures(BaseEstimator,TransformerMixin):
                 # Distance to leaf nodes
                 leaf_distances = [distances[leaf] for leaf in leaf_nodes]
                 max_distance = max(distances.values()) if distances else 0
+                
             
             # Calculate subtree features
             subtree_features = self.calculate_subtree_features(G, node)
@@ -156,6 +159,7 @@ class NodeFeatures(BaseEstimator,TransformerMixin):
                 'avg_distance_to_leaf_nodes': np.mean(leaf_distances) if leaf_distances else 0,
                 'std_distance_to_leaf_nodes': np.std(leaf_distances) if len(leaf_distances) > 1 else 0,
                 'distance_to_farthest_leaf': max(leaf_distances) if leaf_distances else 0,
+                'distance_to_nearest_leaf': min(leaf_distances) if leaf_distances else 0,
                 
                 # Add subtree features
                 **subtree_features
@@ -290,6 +294,87 @@ class NodeFeatures(BaseEstimator,TransformerMixin):
         
         return scores
 
+    def create_bucketing_features(self, normalized_features_dict):
+        """
+        Create bucketing features with proper null handling
+        """
+        # Convert to DataFrame for easier processing
+        features_df = pd.DataFrame.from_dict(normalized_features_dict, orient='index')
+        
+        # Initialize dictionary to store bucket features
+        bucket_features = {}
+        
+        # Create buckets for each feature
+        for feature in features_df.columns:
+            # Create 5 buckets (0-4)
+            try:
+                # Handle null values by filling with median
+                feature_values = features_df[feature].fillna(features_df[feature].median())
+                
+                # Create buckets using qcut, handling any remaining edge cases
+                try:
+                    buckets = pd.qcut(feature_values, q=5, labels=False, duplicates='drop')
+                except:
+                    # If qcut fails, use regular cut
+                    buckets = pd.cut(feature_values, bins=5, labels=False)
+                
+                # Fill any remaining NaN values with 0
+                buckets = buckets.fillna(0)
+                
+                # Store bucket values
+                bucket_features[f'{feature}_bucket'] = dict(zip(features_df.index, buckets))
+            except:
+                # If bucketing fails, assign all values to bucket 0
+                bucket_features[f'{feature}_bucket'] = dict(zip(features_df.index, [0] * len(features_df)))
+        
+        return bucket_features
+
+    def create_descriptive_stats(self, node_features_dict):
+        """
+        Create descriptive statistics for each graph with proper null handling
+        """
+        # Convert node features dictionary to DataFrame
+        features_df = pd.DataFrame.from_dict(node_features_dict, orient='index')
+        
+        # Calculate statistics for each feature
+        stats = {}
+        for feature in features_df.columns:
+            # Handle mean with null values
+            stats[f'{feature}_mean'] = features_df[feature].mean()
+            
+            # Handle std with null values
+            stats[f'{feature}_std'] = features_df[feature].std()
+            
+            # Handle min with null values
+            stats[f'{feature}_min'] = features_df[feature].min()
+            
+            # Handle max with null values
+            stats[f'{feature}_max'] = features_df[feature].max()
+            
+            # Handle median with null values
+            stats[f'{feature}_median'] = features_df[feature].median()
+            
+            # Handle skew with null values
+            try:
+                stats[f'{feature}_skew'] = features_df[feature].skew()
+            except:
+                stats[f'{feature}_skew'] = 0.0
+            
+            # Add quartile information with null handling
+            try:
+                q1, q2, q3 = features_df[feature].quantile([0.25, 0.5, 0.75])
+                stats[f'{feature}_q1'] = q1
+                stats[f'{feature}_q2'] = q2
+                stats[f'{feature}_q3'] = q3
+                stats[f'{feature}_iqr'] = q3 - q1
+            except:
+                stats[f'{feature}_q1'] = 0.0
+                stats[f'{feature}_q2'] = 0.0
+                stats[f'{feature}_q3'] = 0.0
+                stats[f'{feature}_iqr'] = 0.0
+        
+        return stats
+
     def create_node_features(self,edgelist):
 
         T = nx.from_edgelist(edgelist)
@@ -396,21 +481,64 @@ class NodeFeatures(BaseEstimator,TransformerMixin):
         for node in T.nodes():
             centroid_dict[node] = int(node in centroids)
 
-        new_cent_scores = self.calculate_centrality_scores(T)
+        # new_cent_scores = self.calculate_centrality_scores(T)
 
+        ## Leaf Density
+        leaf_density = {}
+        leaves = [n for n in T.nodes() if T.degree(n) == 1]
+    
+        for node in T.nodes():
+            # Leaf density within 2 hops
+            leaf_cal = sum(1 for leaf in leaves if nx.shortest_path_length(T, node, leaf) <= 2)
+            leaf_density[node] = leaf_cal
         
-        return {v: (eccentricity[v],degree_cent[v], harmoni_cent[v], betweeness_cent[v], page_cent[v],eigen_cent[v],closeness_cent[v],\
-                    katz_cent[v],information_cent[v],load_centrality[v],subgraph_cent[v],comm_betweenness[v],current_flow_closeness[v],\
-                    current_flow_betweenness[v],second_order_cent[v],degree[v],\
-                    avg_shortest_path_length[v],effective_size[v],vote_rank_score[v],is_leaf[v],\
-                    largest_component_removed[v],num_subtrees_removed[v],subtree_size_variance[v],participation_diameter[v],\
-                    radiality[v],neighbor_degree_mean[v],neighbor_degree_max[v],neighbor_degree_min[v],num_leaf_neighbors[v],steps[v],max_heights[v],\
-                    tree_based_features[v]['avg_distance_to_all_nodes'],tree_based_features[v]['max_distance_to_any_node'],tree_based_features[v]['avg_distance_to_leaf_nodes'],\
-                    tree_based_features[v]['std_distance_to_leaf_nodes'],tree_based_features[v]['distance_to_farthest_leaf'],  tree_based_features[v]['max_subtree_size'],\
-                    tree_based_features[v]['min_subtree_size'], tree_based_features[v]['subtree_size_balance'],   tree_based_features[v]['num_subtrees'],\
-                    tree_based_features[v]['subtree_size_std'],tree_based_features[v]['max_subtree_depth'],tree_based_features[v]['min_subtree_depth'],\
-                    tree_based_features[v]['subtree_depth_balance'],tree_based_features[v]['subtree_depth_std'],centroid_dict[v],new_cent_scores[v]["D"],\
-                    new_cent_scores[v]['C'],new_cent_scores[v]['D_prime']) for v in T}
+        # Create a list of all feature values for each node
+        feature_values = []
+        for v in T:
+            features = (eccentricity[v], degree_cent[v], harmoni_cent[v], betweeness_cent[v], page_cent[v], eigen_cent[v], closeness_cent[v],
+                    katz_cent[v], information_cent[v], load_centrality[v], subgraph_cent[v], comm_betweenness[v], current_flow_closeness[v],
+                    current_flow_betweenness[v], second_order_cent[v], degree[v],
+                    avg_shortest_path_length[v], effective_size[v], vote_rank_score[v], is_leaf[v],
+                    largest_component_removed[v], num_subtrees_removed[v], subtree_size_variance[v], participation_diameter[v],
+                    radiality[v], neighbor_degree_mean[v], neighbor_degree_max[v], neighbor_degree_min[v], num_leaf_neighbors[v], steps[v], max_heights[v],
+                    tree_based_features[v]['avg_distance_to_all_nodes'], tree_based_features[v]['max_distance_to_any_node'], tree_based_features[v]['avg_distance_to_leaf_nodes'],
+                    tree_based_features[v]['std_distance_to_leaf_nodes'], tree_based_features[v]['distance_to_farthest_leaf'],tree_based_features[v]['distance_to_nearest_leaf'], tree_based_features[v]['max_subtree_size'],
+                    tree_based_features[v]['min_subtree_size'], tree_based_features[v]['subtree_size_balance'], tree_based_features[v]['num_subtrees'],
+                    tree_based_features[v]['subtree_size_std'], tree_based_features[v]['max_subtree_depth'], tree_based_features[v]['min_subtree_depth'],
+                    tree_based_features[v]['subtree_depth_balance'], tree_based_features[v]['subtree_depth_std'], centroid_dict[v],  leaf_density[v])
+            feature_values.append(features)
+        
+        # Convert to numpy array and apply MinMaxScaler
+        feature_array = np.array(feature_values)
+        scaler = MinMaxScaler()
+        normalized_features = scaler.fit_transform(feature_array)
+        
+        # Create dictionary with normalized features
+        normalized_features_dict = {v: tuple(normalized_features[i]) for i, v in enumerate(T)}
+        
+        # Create bucketing features
+        bucketing_features = self.create_bucketing_features(normalized_features_dict)
+        
+        # Create descriptive statistics
+        descriptive_stats = self.create_descriptive_stats(normalized_features_dict)
+        
+        # Combine all features
+        combined_features = {}
+        for node in T.nodes():
+            # Original normalized features
+            node_features = list(normalized_features_dict[node])
+            
+            # Add bucketing features
+            for feature_name, bucket_dict in bucketing_features.items():
+                node_features.append(bucket_dict[node])
+            
+            # Add descriptive statistics
+            for stat_name, stat_value in descriptive_stats.items():
+                node_features.append(stat_value)
+            
+            combined_features[node] = tuple(node_features)
+        
+        return combined_features
     
 
     def fit(self,X,y=None):
@@ -443,6 +571,9 @@ class FormatDataFrame(BaseEstimator,TransformerMixin):
     def extract_features(self,lst,y=None,check=True):
 
         sample_df =  pd.DataFrame.from_dict(lst['node_features'],orient='index',columns=config.NODE_FEATURES)
+        sample_df['sov_order'] = lst['sov_order'] 
+        sample_df['svo_order'] = lst['svo_order'] 
+        sample_df['vso_order'] = lst['vso_order'] 
         sample_df['node_number'] = sample_df.index
         sample_df['sentence'] = lst['sentence']    
         sample_df['language'] = lst['language']

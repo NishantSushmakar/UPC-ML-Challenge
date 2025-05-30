@@ -1,0 +1,281 @@
+Training model: lgbm_logloss with 10 folds
+Log file: ../results/lgbm_logloss_balanced_with_imp_tree_features_boxcox.log
+Training started at: 2025-05-26 22:47:17
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 0 **************************************************
+Train F1 Score:0.8146284220634491, Train Precision:0.7460593474864421, Train Recall: 0.9697184430342297,          Train ROC AUC Score:0.9936791267847113,Train Zero One Loss:0.13291005291005292,Train Log Loss :0.15498668112498387
+Validation F1 Score:0.652169532529076, Validation Precision:0.622503131691314, Validation Recall: 0.7184574919229506,          Validation ROC AUC Score: 0.85783733631412, Valid Zero One Loss:0.638095238095238,Valid Log Loss: 0.2308137092793337
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 1 **************************************************
+Train F1 Score:0.813178569415352, Train Precision:0.7453299241195059, Train Recall: 0.9649983147484661,          Train ROC AUC Score:0.9930894478887381,Train Zero One Loss:0.13026455026455028,Train Log Loss :0.15377240442638312
+Validation F1 Score:0.673673973236306, Validation Precision:0.639985052914632, Validation Recall: 0.747196437269501,          Validation ROC AUC Score: 0.8636545306004635, Valid Zero One Loss:0.6019047619047619,Valid Log Loss: 0.23138347250503383
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 2 **************************************************
+Train F1 Score:0.8172148083960962, Train Precision:0.7486769536816772, Train Recall: 0.9699859839348858,          Train ROC AUC Score:0.9938621249240104,Train Zero One Loss:0.13153439153439153,Train Log Loss :0.15387613295586264
+Validation F1 Score:0.6539674398802247, Validation Precision:0.625434510567297, Validation Recall: 0.7126277941725179,          Validation ROC AUC Score: 0.8533321461280147, Valid Zero One Loss:0.6647619047619048,Valid Log Loss: 0.22732814755023464
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 3 **************************************************
+Train F1 Score:0.8148953446502656, Train Precision:0.7461374221328134, Train Recall: 0.9704604841721215,          Train ROC AUC Score:0.9940438083352073,Train Zero One Loss:0.12994708994708995,Train Log Loss :0.15625305054657865
+Validation F1 Score:0.6628181980042362, Validation Precision:0.6312944365023384, Validation Recall: 0.7330397543045979,          Validation ROC AUC Score: 0.8696531420063394, Valid Zero One Loss:0.6161904761904762,Valid Log Loss: 0.23578430372842116
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 4 **************************************************
+Train F1 Score:0.8145281671497335, Train Precision:0.7456995917763518, Train Recall: 0.9706105977495633,          Train ROC AUC Score:0.9940564038316196,Train Zero One Loss:0.1270899470899471,Train Log Loss :0.15599148660128434
+Validation F1 Score:0.645534788833166, Validation Precision:0.617391932974659, Validation Recall: 0.7122883970489604,          Validation ROC AUC Score: 0.8450266398390343, Valid Zero One Loss:0.6514285714285715,Valid Log Loss: 0.2581848669220904
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 5 **************************************************
+Train F1 Score:0.8147780248852534, Train Precision:0.7461205977547569, Train Recall: 0.9698638300938391,          Train ROC AUC Score:0.9938848139844569,Train Zero One Loss:0.12878306878306878,Train Log Loss :0.15613584489338253
+Validation F1 Score:0.6639145574522781, Validation Precision:0.6311897757504933, Validation Recall: 0.7406301354954563,          Validation ROC AUC Score: 0.8543591756776716, Valid Zero One Loss:0.5980952380952381,Valid Log Loss: 0.24103773198835193
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 6 **************************************************
+Train F1 Score:0.8147434957253434, Train Precision:0.7460637118177327, Train Recall: 0.9703323403824328,          Train ROC AUC Score:0.9941539379953119,Train Zero One Loss:0.1273015873015873,Train Log Loss :0.15606702748119172
+Validation F1 Score:0.6571285549551497, Validation Precision:0.6267327239353152, Validation Recall: 0.7237617294831251,          Validation ROC AUC Score: 0.853676065065458, Valid Zero One Loss:0.6457142857142857,Valid Log Loss: 0.23626467502481222
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 7 **************************************************
+Train F1 Score:0.8157177617726706, Train Precision:0.7468152039761486, Train Recall: 0.971067553932019,          Train ROC AUC Score:0.9945309131204155,Train Zero One Loss:0.12349206349206349,Train Log Loss :0.15585721871012848
+Validation F1 Score:0.6573821333254175, Validation Precision:0.6257665174331841, Validation Recall: 0.736974240487661,          Validation ROC AUC Score: 0.8621439768841697, Valid Zero One Loss:0.6238095238095238,Valid Log Loss: 0.25581081274290596
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 8 **************************************************
+Train F1 Score:0.8131746165338776, Train Precision:0.7451677291404168, Train Recall: 0.9661650739160588,          Train ROC AUC Score:0.9932572649429536,Train Zero One Loss:0.13513227513227513,Train Log Loss :0.15393626359503249
+Validation F1 Score:0.6502428397955087, Validation Precision:0.6220301961330023, Validation Recall: 0.7103384699372193,          Validation ROC AUC Score: 0.8586768902454156, Valid Zero One Loss:0.6542857142857142,Valid Log Loss: 0.2299396774786337
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Warning: Box-Cox transformation failed: The Box-Cox transformation can only be applied to strictly positive data
+Falling back to Yeo-Johnson transformation
+************************************************** Fold 9 **************************************************
+Train F1 Score:0.8122924661462811, Train Precision:0.7438265124279898, Train Recall: 0.9687269272404158,          Train ROC AUC Score:0.9937221538783249,Train Zero One Loss:0.13693121693121693,Train Log Loss :0.15622719818224937
+Validation F1 Score:0.6584687518398742, Validation Precision:0.6272186210007054, Validation Recall: 0.7295022305000225,          Validation ROC AUC Score: 0.8680176086836796, Valid Zero One Loss:0.6161904761904762,Valid Log Loss: 0.22926481498533255
+****************************************************************************************************
+*************** Final Summary ***************
+average training precision:0.7459896994313836 std training precision:0.001175863822735865
+average training recall:0.9691929549204034 std training recall:0.0019173945838401568
+average training f1:0.8145151676738323 std training f1:0.0013242743155821182
+average training auc:0.9938279995685748 std training auc:0.0004010013317740585
+average training zero one loss:0.13033862433862434 std training zero one loss:0.003790974829756848
+average training log loss:0.15531033085170773 std training log loss:0.0010080396865942201
+average validation precision:0.626954689890294 std validation precision:0.005881451095743277
+average validation recall:0.7264816680622012 std validation recall:0.012317768632448097
+average validation f1:0.6575300769851237 std validation f1:0.007542108474291585
+average validation auc:0.8586377511444366 std validation f1:0.007097610770144045
+average validation zero one loss:0.631047619047619 std validation zero one loss:0.021876586434213294
+average validation log loss:0.237581221220515 std validation log loss:0.010443325746362619
+--------------------------------------------------------------------------------
+Training completed at: 2025-05-27 00:21:43

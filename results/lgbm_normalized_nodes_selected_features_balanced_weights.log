@@ -1,0 +1,11 @@
+Training model: lgbm with 10 folds
+Log file: ../results/lgbm_normalized_nodes_selected_features_balanced_weights.log
+Training started at: 2025-05-13 17:28:08
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
