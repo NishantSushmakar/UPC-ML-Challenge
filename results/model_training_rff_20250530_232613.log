@@ -1,0 +1,51 @@
+Training model: rff with 5 folds
+Log file: /Users/marwasulaiman/Documents/BDMA/UPC - 2nd semester/ML/Project/ml-project-2024-2025/UPC-ML-Challenge-RF/results/model_training_rff_20250530_232613.log
+Training started at: 2025-05-30 23:26:13
+--------------------------------------------------------------------------------
+Loading the data
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Loaded and Folds created successfully!!!
+************************************************** Fold 0 **************************************************
+Train F1 Score:0.5676029352888153, Train Precision:0.5759746205238178, Train Recall: 0.7952126081760191,          Train ROC AUC Score:0.8753067675109556,Train Zero One Loss:0.666547619047619,Train Log Loss :0.4614311932104621
+Validation F1 Score:0.55533246255475, Validation Precision:0.5656397955896734, Validation Recall: 0.7545030220452084,          Validation ROC AUC Score: 0.8393078118995214, Valid Zero One Loss:0.6923809523809524,Valid Log Loss: 0.4650075872253923
+****************************************************************************************************
+************************************************** Fold 1 **************************************************
+Train F1 Score:0.5737824087972987, Train Precision:0.5777891075623932, Train Recall: 0.7978704437400951,          Train ROC AUC Score:0.8775382832742183,Train Zero One Loss:0.6579761904761905,Train Log Loss :0.45716169809351526
+Validation F1 Score:0.5570839830408623, Validation Precision:0.5684897594658737, Validation Recall: 0.755955288556234,          Validation ROC AUC Score: 0.8332323577451465, Valid Zero One Loss:0.7271428571428571,Valid Log Loss: 0.4826606942809326
+****************************************************************************************************
+************************************************** Fold 2 **************************************************
+Train F1 Score:0.571898553078147, Train Precision:0.5773438611119022, Train Recall: 0.7979313697590591,          Train ROC AUC Score:0.877185996885474,Train Zero One Loss:0.6644047619047619,Train Log Loss :0.4573877801104615
+Validation F1 Score:0.5488699073005932, Validation Precision:0.5647183327791024, Validation Recall: 0.7514388795733803,          Validation ROC AUC Score: 0.8278978060340934, Valid Zero One Loss:0.7233333333333334,Valid Log Loss: 0.4835290101872659
+****************************************************************************************************
+************************************************** Fold 3 **************************************************
+Train F1 Score:0.5676374630838568, Train Precision:0.5760905195914341, Train Recall: 0.796053375908031,          Train ROC AUC Score:0.8732701550090043,Train Zero One Loss:0.6634523809523809,Train Log Loss :0.4634132206779875
+Validation F1 Score:0.5638556246709048, Validation Precision:0.5718607855117334, Validation Recall: 0.7796223614219363,          Validation ROC AUC Score: 0.8521913958582463, Valid Zero One Loss:0.6966666666666667,Valid Log Loss: 0.4601625400800413
+****************************************************************************************************
+************************************************** Fold 4 **************************************************
+Train F1 Score:0.5702698966509949, Train Precision:0.5769363239488784, Train Recall: 0.7950020798448334,          Train ROC AUC Score:0.8752615880856462,Train Zero One Loss:0.6670238095238096,Train Log Loss :0.46126430249675
+Validation F1 Score:0.5571635762047522, Validation Precision:0.5663745421789967, Validation Recall: 0.7589938468942286,          Validation ROC AUC Score: 0.8387864435245068, Valid Zero One Loss:0.6866666666666666,Valid Log Loss: 0.46140920327832724
+****************************************************************************************************
+*************** Final Summary ***************
+average training precision:0.5768268865476851 std training precision:0.0007033778779106289
+average training recall:0.7964139754856076 std training recall:0.0012641637493431472
+average training f1:0.5702382513798225 std training f1:0.002409466563887195
+average training auc:0.8757125581530596 std training auc:0.0015386791141249994
+average training zero one loss:0.6638809523809523 std training zero one loss:0.0032345919424269973
+average training log loss:0.46013163891783526 std training log loss:0.002453155382188985
+average validation precision:0.5674166431050759 std validation precision:0.0025466063890144147
+average validation recall:0.7601026796981974 std validation recall:0.010058488320827544
+average validation f1:0.5564611107543724 std validation f1:0.004784568534177899
+average validation auc:0.8382831630123029 std validation f1:0.00810072109042896
+average validation zero one loss:0.7052380952380953 std validation zero one loss:0.01667890706980178
+average validation log loss:0.4705538070103918 std validation log loss:0.010366246925484183
+--------------------------------------------------------------------------------
+Training completed at: 2025-05-30 23:29:34
