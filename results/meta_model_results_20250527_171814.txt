@@ -1,0 +1,92 @@
+Meta-Model Training Results
+==================================================
+
+Average Metrics Across Folds:
+Precision: 0.7084 ± 0.0139
+Recall: 0.5923 ± 0.0099
+F1 Score: 0.6239 ± 0.0118
+AUC: 0.6961 ± 0.0218
+Zero-One Loss: 0.6521 ± 0.0224
+Log Loss: 0.3116 ± 0.0173
+
+Per-fold results:
+
+Fold 0:
+precision: 0.6997
+recall: 0.5879
+f1: 0.6182
+auc: 0.6857
+zero_one_loss: 0.6676
+log_loss: 0.3018
+
+Fold 1:
+precision: 0.7149
+recall: 0.5986
+f1: 0.6314
+auc: 0.7273
+zero_one_loss: 0.6210
+log_loss: 0.2921
+
+Fold 2:
+precision: 0.7055
+recall: 0.5829
+f1: 0.6138
+auc: 0.6708
+zero_one_loss: 0.6790
+log_loss: 0.3053
+
+Fold 3:
+precision: 0.7276
+recall: 0.6001
+f1: 0.6349
+auc: 0.7144
+zero_one_loss: 0.6324
+log_loss: 0.3073
+
+Fold 4:
+precision: 0.6827
+recall: 0.5802
+f1: 0.6074
+auc: 0.6719
+zero_one_loss: 0.6848
+log_loss: 0.3500
+
+Fold 5:
+precision: 0.7286
+recall: 0.6158
+f1: 0.6506
+auc: 0.7344
+zero_one_loss: 0.6171
+log_loss: 0.2958
+
+Fold 6:
+precision: 0.6986
+recall: 0.5851
+f1: 0.6151
+auc: 0.6790
+zero_one_loss: 0.6562
+log_loss: 0.3192
+
+Fold 7:
+precision: 0.6970
+recall: 0.5888
+f1: 0.6184
+auc: 0.6949
+zero_one_loss: 0.6400
+log_loss: 0.3327
+
+Fold 8:
+precision: 0.7083
+recall: 0.5927
+f1: 0.6244
+auc: 0.6790
+zero_one_loss: 0.6667
+log_loss: 0.3155
+
+Fold 9:
+precision: 0.7207
+recall: 0.5910
+f1: 0.6244
+auc: 0.7032
+zero_one_loss: 0.6562
+log_loss: 0.2965

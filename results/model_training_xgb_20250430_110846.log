@@ -1,0 +1,151 @@
+Training model: xgb with 5 folds
+Log file: ../results/model_training_xgb_20250430_110846.log
+Training started at: 2025-04-30 11:08:46
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Validation Data Median Probability 0.31766042
+Validation Data Average Probability 0.34126523
+************************************************** Fold 0 **************************************************
+Train F1 Score:0.6296681046146642, Train Precision:0.907002309207134, Train Recall: 0.5839175463713618,          Train ROC AUC Score:0.9292887244952718,Train Zero One Loss:0.48035714285714287,Train Log Loss :0.12589790921947125
+Validation F1 Score:0.5626649727293618, Validation Precision:0.7519815588789942, Validation Recall: 0.5420688838551541,          Validation ROC AUC Score: 0.8547033153551107, Valid Zero One Loss:0.6657142857142857,Valid Log Loss: 0.15784377931880045
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Validation Data Median Probability 0.32954538
+Validation Data Average Probability 0.3560984
+************************************************** Fold 1 **************************************************
+Train F1 Score:0.631755865204144, Train Precision:0.9056130698588849, Train Recall: 0.5854310266703364,          Train ROC AUC Score:0.9309966289274039,Train Zero One Loss:0.47035714285714286,Train Log Loss :0.12484857295656544
+Validation F1 Score:0.5614315968266943, Validation Precision:0.7265852137926557, Validation Recall: 0.5416273307176179,          Validation ROC AUC Score: 0.8563518099547511, Valid Zero One Loss:0.66,Valid Log Loss: 0.15744444213704162
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Validation Data Median Probability 0.3284433
+Validation Data Average Probability 0.3561081
+************************************************** Fold 2 **************************************************
+Train F1 Score:0.6428649042536466, Train Precision:0.9050292043124013, Train Recall: 0.5933246445901565,          Train ROC AUC Score:0.9335027654036185,Train Zero One Loss:0.46285714285714286,Train Log Loss :0.12226892601299004
+Validation F1 Score:0.5595874086907153, Validation Precision:0.7111853931202579, Validation Recall: 0.5409723106448547,          Validation ROC AUC Score: 0.8475450230470021, Valid Zero One Loss:0.6671428571428571,Valid Log Loss: 0.16673171871971912
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Validation Data Median Probability 0.32030404
+Validation Data Average Probability 0.34349293
+************************************************** Fold 3 **************************************************
+Train F1 Score:0.6391614562181193, Train Precision:0.9085732545111129, Train Recall: 0.5905437784082446,          Train ROC AUC Score:0.932007905106084,Train Zero One Loss:0.4567857142857143,Train Log Loss :0.12307742299918284
+Validation F1 Score:0.5545770812159513, Validation Precision:0.7310566087589195, Validation Recall: 0.5373726863107394,          Validation ROC AUC Score: 0.8569329443417939, Valid Zero One Loss:0.660952380952381,Valid Log Loss: 0.1608179529813321
+****************************************************************************************************
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+One Hot Encoding Started
+One Hot Encoding created and Saved
+Validation Data Median Probability 0.32017368
+Validation Data Average Probability 0.34911495
+************************************************** Fold 4 **************************************************
+Train F1 Score:0.6369274609087201, Train Precision:0.9150281087354832, Train Recall: 0.5887978420713503,          Train ROC AUC Score:0.9306104608452911,Train Zero One Loss:0.4691666666666667,Train Log Loss :0.12497317649779073
+Validation F1 Score:0.5575814489362538, Validation Precision:0.7318139927047256, Validation Recall: 0.5390314685488976,          Validation ROC AUC Score: 0.855233795915519, Valid Zero One Loss:0.6723809523809524,Valid Log Loss: 0.1573733172035183
+****************************************************************************************************
+*************** Final Summary ***************
+average training precision:0.9082491893250033 std training precision:0.003603634442281779
+average training recall:0.5884029676222899 std training recall:0.0034033318277236755
+average training f1:0.6360755582398588 std training f1:0.004817861219798779
+average training auc:0.9312812969555339 std training auc:0.0014116857619684068
+average training zero one loss:0.46790476190476193 std training zero one loss:0.007896582113186364
+average training log loss:0.12421320153720006 std training log loss:0.001333394087090341
+average validation precision:0.7305245534511104 std validation precision:0.013052741762699981
+average validation recall:0.5402145360154528 std validation recall:0.0017598054179162339
+average validation f1:0.5591685016797954 std validation f1:0.0028678309160325467
+average validation auc:0.8541533777228352 std validation f1:0.0033970334487501493
+average validation zero one loss:0.6652380952380952 std validation zero one loss:0.004487321519767525
+average validation log loss:0.1600422420720823 std validation log loss:0.0035792677510382447
+--------------------------------------------------------------------------------
+Training completed at: 2025-04-30 11:17:52

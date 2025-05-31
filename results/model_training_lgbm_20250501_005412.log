@@ -1,0 +1,13 @@
+Training model: lgbm with 5 folds
+Log file: ../results/model_training_lgbm_20250501_005412.log
+Training started at: 2025-05-01 00:54:12
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started

@@ -1,0 +1,11 @@
+Training model: lgbm with 5 folds
+Log file: ../results/model_training_lgbm_20250429_143956.log
+Training started at: 2025-04-29 14:39:56
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+Valid Zero One Loss: 0.9228571428571428
+Valid Zero One Loss: 0.929047619047619
+Valid Zero One Loss: 0.9242857142857143
+Valid Zero One Loss: 0.9157142857142857
+Valid Zero One Loss: 0.9333333333333333

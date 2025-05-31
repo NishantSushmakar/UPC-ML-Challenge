@@ -1,0 +1,2707 @@
+Training model: mnb with 5 folds (Language-first approach)
+Log file: ../results/mnb_per_language.log
+Training started at: 2025-05-13 22:45:48
+--------------------------------------------------------------------------------
+Loading the data
+Loaded and Folds created successfully!!!
+Found 21 languages: ['Japanese' 'Finnish' 'Galician' 'English' 'Hindi' 'French' 'Italian'
+ 'Indonesian' 'Swedish' 'Spanish' 'Icelandic' 'German' 'Korean' 'Polish'
+ 'Thai' 'Turkish' 'Czech' 'Chinese' 'Portuguese' 'Arabic' 'Russian']
+
+==================== Processing Language: Japanese ====================
+
+Processing fold 0 for Japanese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Japanese:
+Train - F1: 0.5109, Precision: 0.5142, Recall: 0.5097
+Train - Zero One Loss: 0.9500, Log Loss: 0.2153
+Valid - F1: 0.4974, Precision: 0.4980, Recall: 0.4988
+Valid - Zero One Loss: 0.9600, Log Loss: 0.2107
+
+Processing fold 1 for Japanese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Japanese:
+Train - F1: 0.5075, Precision: 0.5107, Recall: 0.5068
+Train - Zero One Loss: 0.9525, Log Loss: 0.2149
+Valid - F1: 0.5141, Precision: 0.5181, Recall: 0.5125
+Valid - Zero One Loss: 0.9600, Log Loss: 0.2133
+
+Processing fold 2 for Japanese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Japanese:
+Train - F1: 0.5074, Precision: 0.5089, Recall: 0.5068
+Train - Zero One Loss: 0.9475, Log Loss: 0.2186
+Valid - F1: 0.5034, Precision: 0.5038, Recall: 0.5033
+Valid - Zero One Loss: 0.9700, Log Loss: 0.2273
+
+Processing fold 3 for Japanese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Japanese:
+Train - F1: 0.5106, Precision: 0.5126, Recall: 0.5096
+Train - Zero One Loss: 0.9550, Log Loss: 0.2178
+Valid - F1: 0.5128, Precision: 0.5159, Recall: 0.5115
+Valid - Zero One Loss: 0.9400, Log Loss: 0.2278
+
+Processing fold 4 for Japanese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Japanese:
+Train - F1: 0.5088, Precision: 0.5153, Recall: 0.5079
+Train - Zero One Loss: 0.9550, Log Loss: 0.2093
+Valid - F1: 0.5151, Precision: 0.5291, Recall: 0.5125
+Valid - Zero One Loss: 0.9300, Log Loss: 0.2008
+
+-------------------- Summary for Japanese --------------------
+Train - F1: 0.5090, Precision: 0.5123, Recall: 0.5082
+Train - Zero One Loss: 0.9520, Log Loss: 0.2152
+Valid - F1: 0.5086, Precision: 0.5130, Recall: 0.5077
+Valid - Zero One Loss: 0.9520, Log Loss: 0.2160
+
+==================== Processing Language: Finnish ====================
+
+Processing fold 0 for Finnish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Finnish:
+Train - F1: 0.6057, Precision: 0.5979, Recall: 0.7718
+Train - Zero One Loss: 0.6700, Log Loss: 1.3200
+Valid - F1: 0.5984, Precision: 0.5938, Recall: 0.7642
+Valid - Zero One Loss: 0.6700, Log Loss: 1.3836
+
+Processing fold 1 for Finnish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Finnish:
+Train - F1: 0.6044, Precision: 0.5970, Recall: 0.7677
+Train - Zero One Loss: 0.6725, Log Loss: 1.3248
+Valid - F1: 0.6011, Precision: 0.5955, Recall: 0.7753
+Valid - Zero One Loss: 0.6700, Log Loss: 1.2325
+
+Processing fold 2 for Finnish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Finnish:
+Train - F1: 0.6069, Precision: 0.5985, Recall: 0.7750
+Train - Zero One Loss: 0.6775, Log Loss: 1.3086
+Valid - F1: 0.5956, Precision: 0.5903, Recall: 0.7416
+Valid - Zero One Loss: 0.6400, Log Loss: 1.3961
+
+Processing fold 3 for Finnish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Finnish:
+Train - F1: 0.6001, Precision: 0.5940, Recall: 0.7619
+Train - Zero One Loss: 0.6725, Log Loss: 1.3010
+Valid - F1: 0.6230, Precision: 0.6100, Recall: 0.8014
+Valid - Zero One Loss: 0.6700, Log Loss: 1.2361
+
+Processing fold 4 for Finnish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Finnish:
+Train - F1: 0.6051, Precision: 0.5976, Recall: 0.7701
+Train - Zero One Loss: 0.6600, Log Loss: 1.3012
+Valid - F1: 0.6036, Precision: 0.5948, Recall: 0.7617
+Valid - Zero One Loss: 0.7100, Log Loss: 1.3172
+
+-------------------- Summary for Finnish --------------------
+Train - F1: 0.6044, Precision: 0.5970, Recall: 0.7693
+Train - Zero One Loss: 0.6705, Log Loss: 1.3111
+Valid - F1: 0.6043, Precision: 0.5969, Recall: 0.7688
+Valid - Zero One Loss: 0.6720, Log Loss: 1.3131
+
+==================== Processing Language: Galician ====================
+
+Processing fold 0 for Galician
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Galician:
+Train - F1: 0.5685, Precision: 0.5662, Recall: 0.7429
+Train - Zero One Loss: 0.7725, Log Loss: 0.9446
+Valid - F1: 0.5837, Precision: 0.5756, Recall: 0.7807
+Valid - Zero One Loss: 0.7500, Log Loss: 0.8902
+
+Processing fold 1 for Galician
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Galician:
+Train - F1: 0.5712, Precision: 0.5678, Recall: 0.7487
+Train - Zero One Loss: 0.7650, Log Loss: 0.9471
+Valid - F1: 0.5748, Precision: 0.5695, Recall: 0.7549
+Valid - Zero One Loss: 0.7800, Log Loss: 0.9258
+
+Processing fold 2 for Galician
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Galician:
+Train - F1: 0.5752, Precision: 0.5698, Recall: 0.7549
+Train - Zero One Loss: 0.7725, Log Loss: 0.9407
+Valid - F1: 0.5609, Precision: 0.5627, Recall: 0.7312
+Valid - Zero One Loss: 0.7500, Log Loss: 0.9870
+
+Processing fold 3 for Galician
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Galician:
+Train - F1: 0.5689, Precision: 0.5661, Recall: 0.7439
+Train - Zero One Loss: 0.7675, Log Loss: 0.9194
+Valid - F1: 0.5858, Precision: 0.5770, Recall: 0.7710
+Valid - Zero One Loss: 0.7700, Log Loss: 0.9156
+
+Processing fold 4 for Galician
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Galician:
+Train - F1: 0.5762, Precision: 0.5708, Recall: 0.7566
+Train - Zero One Loss: 0.7625, Log Loss: 0.9432
+Valid - F1: 0.5586, Precision: 0.5587, Recall: 0.7180
+Valid - Zero One Loss: 0.7900, Log Loss: 0.9826
+
+-------------------- Summary for Galician --------------------
+Train - F1: 0.5720, Precision: 0.5681, Recall: 0.7494
+Train - Zero One Loss: 0.7680, Log Loss: 0.9390
+Valid - F1: 0.5728, Precision: 0.5687, Recall: 0.7512
+Valid - Zero One Loss: 0.7680, Log Loss: 0.9402
+
+==================== Processing Language: English ====================
+
+Processing fold 0 for English
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for English:
+Train - F1: 0.5783, Precision: 0.5741, Recall: 0.7519
+Train - Zero One Loss: 0.7475, Log Loss: 0.9794
+Valid - F1: 0.5805, Precision: 0.5761, Recall: 0.7677
+Valid - Zero One Loss: 0.7100, Log Loss: 0.9612
+
+Processing fold 1 for English
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for English:
+Train - F1: 0.5807, Precision: 0.5753, Recall: 0.7538
+Train - Zero One Loss: 0.7275, Log Loss: 0.9675
+Valid - F1: 0.5806, Precision: 0.5756, Recall: 0.7591
+Valid - Zero One Loss: 0.8100, Log Loss: 0.9765
+
+Processing fold 2 for English
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for English:
+Train - F1: 0.5811, Precision: 0.5761, Recall: 0.7613
+Train - Zero One Loss: 0.7425, Log Loss: 0.9747
+Valid - F1: 0.5758, Precision: 0.5712, Recall: 0.7309
+Valid - Zero One Loss: 0.7500, Log Loss: 0.9537
+
+Processing fold 3 for English
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for English:
+Train - F1: 0.5758, Precision: 0.5723, Recall: 0.7472
+Train - Zero One Loss: 0.7600, Log Loss: 0.9469
+Valid - F1: 0.5941, Precision: 0.5850, Recall: 0.7852
+Valid - Zero One Loss: 0.7100, Log Loss: 0.9754
+
+Processing fold 4 for English
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for English:
+Train - F1: 0.5817, Precision: 0.5762, Recall: 0.7581
+Train - Zero One Loss: 0.7475, Log Loss: 0.9748
+Valid - F1: 0.5703, Precision: 0.5691, Recall: 0.7414
+Valid - Zero One Loss: 0.7300, Log Loss: 0.9800
+
+-------------------- Summary for English --------------------
+Train - F1: 0.5795, Precision: 0.5748, Recall: 0.7545
+Train - Zero One Loss: 0.7450, Log Loss: 0.9687
+Valid - F1: 0.5802, Precision: 0.5754, Recall: 0.7568
+Valid - Zero One Loss: 0.7420, Log Loss: 0.9694
+
+==================== Processing Language: Hindi ====================
+
+Processing fold 0 for Hindi
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Hindi:
+Train - F1: 0.5448, Precision: 0.5455, Recall: 0.6523
+Train - Zero One Loss: 0.8175, Log Loss: 0.7102
+Valid - F1: 0.5445, Precision: 0.5455, Recall: 0.6574
+Valid - Zero One Loss: 0.7100, Log Loss: 0.6908
+
+Processing fold 1 for Hindi
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Hindi:
+Train - F1: 0.5456, Precision: 0.5458, Recall: 0.6522
+Train - Zero One Loss: 0.8100, Log Loss: 0.6905
+Valid - F1: 0.5474, Precision: 0.5471, Recall: 0.6586
+Valid - Zero One Loss: 0.7600, Log Loss: 0.6530
+
+Processing fold 2 for Hindi
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Hindi:
+Train - F1: 0.5442, Precision: 0.5449, Recall: 0.6509
+Train - Zero One Loss: 0.7800, Log Loss: 0.7021
+Valid - F1: 0.5537, Precision: 0.5516, Recall: 0.6678
+Valid - Zero One Loss: 0.8700, Log Loss: 0.7148
+
+Processing fold 3 for Hindi
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Hindi:
+Train - F1: 0.5485, Precision: 0.5478, Recall: 0.6609
+Train - Zero One Loss: 0.7925, Log Loss: 0.7069
+Valid - F1: 0.5321, Precision: 0.5378, Recall: 0.6279
+Valid - Zero One Loss: 0.8300, Log Loss: 0.7668
+
+Processing fold 4 for Hindi
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Hindi:
+Train - F1: 0.5450, Precision: 0.5457, Recall: 0.6534
+Train - Zero One Loss: 0.7975, Log Loss: 0.7072
+Valid - F1: 0.5485, Precision: 0.5470, Recall: 0.6563
+Valid - Zero One Loss: 0.8100, Log Loss: 0.6995
+
+-------------------- Summary for Hindi --------------------
+Train - F1: 0.5456, Precision: 0.5459, Recall: 0.6539
+Train - Zero One Loss: 0.7995, Log Loss: 0.7034
+Valid - F1: 0.5453, Precision: 0.5458, Recall: 0.6536
+Valid - Zero One Loss: 0.7960, Log Loss: 0.7050
+
+==================== Processing Language: French ====================
+
+Processing fold 0 for French
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for French:
+Train - F1: 0.5679, Precision: 0.5643, Recall: 0.7410
+Train - Zero One Loss: 0.7775, Log Loss: 0.9048
+Valid - F1: 0.5778, Precision: 0.5716, Recall: 0.7704
+Valid - Zero One Loss: 0.7400, Log Loss: 0.8800
+
+Processing fold 1 for French
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for French:
+Train - F1: 0.5715, Precision: 0.5665, Recall: 0.7469
+Train - Zero One Loss: 0.7825, Log Loss: 0.9001
+Valid - F1: 0.5706, Precision: 0.5661, Recall: 0.7515
+Valid - Zero One Loss: 0.7500, Log Loss: 0.8881
+
+Processing fold 2 for French
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for French:
+Train - F1: 0.5732, Precision: 0.5674, Recall: 0.7505
+Train - Zero One Loss: 0.7750, Log Loss: 0.9017
+Valid - F1: 0.5605, Precision: 0.5614, Recall: 0.7346
+Valid - Zero One Loss: 0.7700, Log Loss: 0.9438
+
+Processing fold 3 for French
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for French:
+Train - F1: 0.5664, Precision: 0.5636, Recall: 0.7389
+Train - Zero One Loss: 0.7675, Log Loss: 0.8974
+Valid - F1: 0.5894, Precision: 0.5775, Recall: 0.7821
+Valid - Zero One Loss: 0.7900, Log Loss: 0.8434
+
+Processing fold 4 for French
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for French:
+Train - F1: 0.5753, Precision: 0.5694, Recall: 0.7602
+Train - Zero One Loss: 0.7625, Log Loss: 0.9155
+Valid - F1: 0.5541, Precision: 0.5540, Recall: 0.6976
+Valid - Zero One Loss: 0.8200, Log Loss: 0.9724
+
+-------------------- Summary for French --------------------
+Train - F1: 0.5709, Precision: 0.5663, Recall: 0.7475
+Train - Zero One Loss: 0.7730, Log Loss: 0.9039
+Valid - F1: 0.5705, Precision: 0.5661, Recall: 0.7472
+Valid - Zero One Loss: 0.7740, Log Loss: 0.9055
+
+==================== Processing Language: Italian ====================
+
+Processing fold 0 for Italian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Italian:
+Train - F1: 0.5722, Precision: 0.5676, Recall: 0.7476
+Train - Zero One Loss: 0.7950, Log Loss: 0.9063
+Valid - F1: 0.5682, Precision: 0.5652, Recall: 0.7441
+Valid - Zero One Loss: 0.7700, Log Loss: 0.9133
+
+Processing fold 1 for Italian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Italian:
+Train - F1: 0.5707, Precision: 0.5670, Recall: 0.7476
+Train - Zero One Loss: 0.7800, Log Loss: 0.9029
+Valid - F1: 0.5775, Precision: 0.5697, Recall: 0.7499
+Valid - Zero One Loss: 0.8300, Log Loss: 0.8874
+
+Processing fold 2 for Italian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Italian:
+Train - F1: 0.5737, Precision: 0.5682, Recall: 0.7503
+Train - Zero One Loss: 0.7850, Log Loss: 0.9089
+Valid - F1: 0.5628, Precision: 0.5628, Recall: 0.7296
+Valid - Zero One Loss: 0.8000, Log Loss: 0.9886
+
+Processing fold 3 for Italian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Italian:
+Train - F1: 0.5645, Precision: 0.5623, Recall: 0.7295
+Train - Zero One Loss: 0.7875, Log Loss: 0.8928
+Valid - F1: 0.5956, Precision: 0.5847, Recall: 0.8143
+Valid - Zero One Loss: 0.7800, Log Loss: 0.8392
+
+Processing fold 4 for Italian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Italian:
+Train - F1: 0.5762, Precision: 0.5703, Recall: 0.7567
+Train - Zero One Loss: 0.8000, Log Loss: 0.9190
+Valid - F1: 0.5554, Precision: 0.5550, Recall: 0.7020
+Valid - Zero One Loss: 0.7600, Log Loss: 0.9100
+
+-------------------- Summary for Italian --------------------
+Train - F1: 0.5714, Precision: 0.5671, Recall: 0.7463
+Train - Zero One Loss: 0.7895, Log Loss: 0.9060
+Valid - F1: 0.5719, Precision: 0.5675, Recall: 0.7480
+Valid - Zero One Loss: 0.7880, Log Loss: 0.9077
+
+==================== Processing Language: Indonesian ====================
+
+Processing fold 0 for Indonesian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Indonesian:
+Train - F1: 0.5936, Precision: 0.5845, Recall: 0.7639
+Train - Zero One Loss: 0.7050, Log Loss: 1.0284
+Valid - F1: 0.5948, Precision: 0.5849, Recall: 0.7664
+Valid - Zero One Loss: 0.7600, Log Loss: 1.0194
+
+Processing fold 1 for Indonesian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Indonesian:
+Train - F1: 0.5933, Precision: 0.5844, Recall: 0.7647
+Train - Zero One Loss: 0.7075, Log Loss: 1.0295
+Valid - F1: 0.5983, Precision: 0.5877, Recall: 0.7760
+Valid - Zero One Loss: 0.7500, Log Loss: 0.9891
+
+Processing fold 2 for Indonesian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Indonesian:
+Train - F1: 0.5960, Precision: 0.5862, Recall: 0.7715
+Train - Zero One Loss: 0.7300, Log Loss: 1.0126
+Valid - F1: 0.5831, Precision: 0.5768, Recall: 0.7347
+Valid - Zero One Loss: 0.6700, Log Loss: 1.0403
+
+Processing fold 3 for Indonesian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Indonesian:
+Train - F1: 0.5911, Precision: 0.5825, Recall: 0.7580
+Train - Zero One Loss: 0.7275, Log Loss: 1.0041
+Valid - F1: 0.6064, Precision: 0.5951, Recall: 0.8024
+Valid - Zero One Loss: 0.6800, Log Loss: 1.0109
+
+Processing fold 4 for Indonesian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Indonesian:
+Train - F1: 0.5956, Precision: 0.5859, Recall: 0.7679
+Train - Zero One Loss: 0.7125, Log Loss: 1.0254
+Valid - F1: 0.5826, Precision: 0.5763, Recall: 0.7402
+Valid - Zero One Loss: 0.7100, Log Loss: 1.0441
+
+-------------------- Summary for Indonesian --------------------
+Train - F1: 0.5939, Precision: 0.5847, Recall: 0.7652
+Train - Zero One Loss: 0.7165, Log Loss: 1.0200
+Valid - F1: 0.5931, Precision: 0.5842, Recall: 0.7639
+Valid - Zero One Loss: 0.7140, Log Loss: 1.0208
+
+==================== Processing Language: Swedish ====================
+
+Processing fold 0 for Swedish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Swedish:
+Train - F1: 0.5967, Precision: 0.5867, Recall: 0.7717
+Train - Zero One Loss: 0.7225, Log Loss: 1.0386
+Valid - F1: 0.5994, Precision: 0.5891, Recall: 0.7895
+Valid - Zero One Loss: 0.6900, Log Loss: 0.9619
+
+Processing fold 1 for Swedish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Swedish:
+Train - F1: 0.5978, Precision: 0.5874, Recall: 0.7733
+Train - Zero One Loss: 0.7025, Log Loss: 1.0232
+Valid - F1: 0.6017, Precision: 0.5894, Recall: 0.7832
+Valid - Zero One Loss: 0.7600, Log Loss: 0.9886
+
+Processing fold 2 for Swedish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Swedish:
+Train - F1: 0.6004, Precision: 0.5892, Recall: 0.7823
+Train - Zero One Loss: 0.7225, Log Loss: 1.0209
+Valid - F1: 0.5890, Precision: 0.5807, Recall: 0.7459
+Valid - Zero One Loss: 0.7200, Log Loss: 1.0694
+
+Processing fold 3 for Swedish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Swedish:
+Train - F1: 0.5983, Precision: 0.5875, Recall: 0.7752
+Train - Zero One Loss: 0.7350, Log Loss: 1.0020
+Valid - F1: 0.6048, Precision: 0.5916, Recall: 0.7785
+Valid - Zero One Loss: 0.6500, Log Loss: 1.0379
+
+Processing fold 4 for Swedish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Swedish:
+Train - F1: 0.5985, Precision: 0.5876, Recall: 0.7741
+Train - Zero One Loss: 0.7125, Log Loss: 1.0105
+Valid - F1: 0.5975, Precision: 0.5878, Recall: 0.7791
+Valid - Zero One Loss: 0.7600, Log Loss: 1.0437
+
+-------------------- Summary for Swedish --------------------
+Train - F1: 0.5983, Precision: 0.5877, Recall: 0.7753
+Train - Zero One Loss: 0.7190, Log Loss: 1.0191
+Valid - F1: 0.5985, Precision: 0.5877, Recall: 0.7752
+Valid - Zero One Loss: 0.7160, Log Loss: 1.0203
+
+==================== Processing Language: Spanish ====================
+
+Processing fold 0 for Spanish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Spanish:
+Train - F1: 0.5780, Precision: 0.5720, Recall: 0.7606
+Train - Zero One Loss: 0.7525, Log Loss: 0.9421
+Valid - F1: 0.5912, Precision: 0.5781, Recall: 0.7689
+Valid - Zero One Loss: 0.7100, Log Loss: 0.8700
+
+Processing fold 1 for Spanish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Spanish:
+Train - F1: 0.5807, Precision: 0.5733, Recall: 0.7623
+Train - Zero One Loss: 0.7450, Log Loss: 0.9391
+Valid - F1: 0.5806, Precision: 0.5730, Recall: 0.7667
+Valid - Zero One Loss: 0.7400, Log Loss: 0.9351
+
+Processing fold 2 for Spanish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Spanish:
+Train - F1: 0.5834, Precision: 0.5748, Recall: 0.7685
+Train - Zero One Loss: 0.7300, Log Loss: 0.9425
+Valid - F1: 0.5705, Precision: 0.5673, Recall: 0.7423
+Valid - Zero One Loss: 0.8100, Log Loss: 0.9766
+
+Processing fold 3 for Spanish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Spanish:
+Train - F1: 0.5771, Precision: 0.5707, Recall: 0.7549
+Train - Zero One Loss: 0.7450, Log Loss: 0.9236
+Valid - F1: 0.5902, Precision: 0.5812, Recall: 0.7932
+Valid - Zero One Loss: 0.7200, Log Loss: 0.9436
+
+Processing fold 4 for Spanish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Spanish:
+Train - F1: 0.5838, Precision: 0.5751, Recall: 0.7673
+Train - Zero One Loss: 0.7450, Log Loss: 0.9374
+Valid - F1: 0.5709, Precision: 0.5670, Recall: 0.7443
+Valid - Zero One Loss: 0.7500, Log Loss: 0.9634
+
+-------------------- Summary for Spanish --------------------
+Train - F1: 0.5806, Precision: 0.5732, Recall: 0.7627
+Train - Zero One Loss: 0.7435, Log Loss: 0.9369
+Valid - F1: 0.5807, Precision: 0.5733, Recall: 0.7631
+Valid - Zero One Loss: 0.7460, Log Loss: 0.9377
+
+==================== Processing Language: Icelandic ====================
+
+Processing fold 0 for Icelandic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Icelandic:
+Train - F1: 0.5951, Precision: 0.5859, Recall: 0.7653
+Train - Zero One Loss: 0.7125, Log Loss: 0.9376
+Valid - F1: 0.5991, Precision: 0.5877, Recall: 0.7673
+Valid - Zero One Loss: 0.6600, Log Loss: 0.9136
+
+Processing fold 1 for Icelandic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Icelandic:
+Train - F1: 0.6011, Precision: 0.5897, Recall: 0.7747
+Train - Zero One Loss: 0.7000, Log Loss: 0.9472
+Valid - F1: 0.5817, Precision: 0.5775, Recall: 0.7451
+Valid - Zero One Loss: 0.7000, Log Loss: 0.9234
+
+Processing fold 2 for Icelandic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Icelandic:
+Train - F1: 0.5977, Precision: 0.5875, Recall: 0.7714
+Train - Zero One Loss: 0.6825, Log Loss: 0.9381
+Valid - F1: 0.5851, Precision: 0.5805, Recall: 0.7484
+Valid - Zero One Loss: 0.7800, Log Loss: 1.0377
+
+Processing fold 3 for Icelandic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Icelandic:
+Train - F1: 0.5934, Precision: 0.5848, Recall: 0.7637
+Train - Zero One Loss: 0.7150, Log Loss: 0.9253
+Valid - F1: 0.6172, Precision: 0.5997, Recall: 0.7919
+Valid - Zero One Loss: 0.6400, Log Loss: 0.8587
+
+Processing fold 4 for Icelandic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Icelandic:
+Train - F1: 0.5957, Precision: 0.5863, Recall: 0.7643
+Train - Zero One Loss: 0.6950, Log Loss: 0.9260
+Valid - F1: 0.6032, Precision: 0.5909, Recall: 0.7870
+Valid - Zero One Loss: 0.7300, Log Loss: 0.9500
+
+-------------------- Summary for Icelandic --------------------
+Train - F1: 0.5966, Precision: 0.5869, Recall: 0.7679
+Train - Zero One Loss: 0.7010, Log Loss: 0.9348
+Valid - F1: 0.5972, Precision: 0.5872, Recall: 0.7679
+Valid - Zero One Loss: 0.7020, Log Loss: 0.9367
+
+==================== Processing Language: German ====================
+
+Processing fold 0 for German
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for German:
+Train - F1: 0.5888, Precision: 0.5817, Recall: 0.7788
+Train - Zero One Loss: 0.7500, Log Loss: 1.0824
+Valid - F1: 0.5920, Precision: 0.5825, Recall: 0.7780
+Valid - Zero One Loss: 0.6600, Log Loss: 1.0271
+
+Processing fold 1 for German
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for German:
+Train - F1: 0.5883, Precision: 0.5812, Recall: 0.7753
+Train - Zero One Loss: 0.7175, Log Loss: 1.0897
+Valid - F1: 0.5931, Precision: 0.5835, Recall: 0.7874
+Valid - Zero One Loss: 0.8000, Log Loss: 1.0809
+
+Processing fold 2 for German
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for German:
+Train - F1: 0.5905, Precision: 0.5824, Recall: 0.7814
+Train - Zero One Loss: 0.7425, Log Loss: 1.0906
+Valid - F1: 0.5835, Precision: 0.5786, Recall: 0.7663
+Valid - Zero One Loss: 0.6900, Log Loss: 1.0673
+
+Processing fold 3 for German
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for German:
+Train - F1: 0.5859, Precision: 0.5795, Recall: 0.7727
+Train - Zero One Loss: 0.7400, Log Loss: 1.0690
+Valid - F1: 0.6042, Precision: 0.5911, Recall: 0.7987
+Valid - Zero One Loss: 0.7100, Log Loss: 1.0533
+
+Processing fold 4 for German
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for German:
+Train - F1: 0.5934, Precision: 0.5839, Recall: 0.7818
+Train - Zero One Loss: 0.7125, Log Loss: 1.0771
+Valid - F1: 0.5769, Precision: 0.5745, Recall: 0.7599
+Valid - Zero One Loss: 0.8000, Log Loss: 1.1855
+
+-------------------- Summary for German --------------------
+Train - F1: 0.5894, Precision: 0.5817, Recall: 0.7780
+Train - Zero One Loss: 0.7325, Log Loss: 1.0818
+Valid - F1: 0.5899, Precision: 0.5820, Recall: 0.7781
+Valid - Zero One Loss: 0.7320, Log Loss: 1.0828
+
+==================== Processing Language: Korean ====================
+
+Processing fold 0 for Korean
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Korean:
+Train - F1: 0.5825, Precision: 0.5777, Recall: 0.7211
+Train - Zero One Loss: 0.7000, Log Loss: 0.9890
+Valid - F1: 0.5764, Precision: 0.5737, Recall: 0.7186
+Valid - Zero One Loss: 0.6900, Log Loss: 0.9630
+
+Processing fold 1 for Korean
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Korean:
+Train - F1: 0.5837, Precision: 0.5786, Recall: 0.7260
+Train - Zero One Loss: 0.6925, Log Loss: 0.9812
+Valid - F1: 0.5757, Precision: 0.5718, Recall: 0.7018
+Valid - Zero One Loss: 0.7100, Log Loss: 0.9969
+
+Processing fold 2 for Korean
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Korean:
+Train - F1: 0.5819, Precision: 0.5772, Recall: 0.7238
+Train - Zero One Loss: 0.7100, Log Loss: 0.9723
+Valid - F1: 0.5809, Precision: 0.5764, Recall: 0.7093
+Valid - Zero One Loss: 0.6600, Log Loss: 1.0403
+
+Processing fold 3 for Korean
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Korean:
+Train - F1: 0.5790, Precision: 0.5746, Recall: 0.7123
+Train - Zero One Loss: 0.6825, Log Loss: 0.9779
+Valid - F1: 0.5870, Precision: 0.5826, Recall: 0.7407
+Valid - Zero One Loss: 0.7600, Log Loss: 1.0097
+
+Processing fold 4 for Korean
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Korean:
+Train - F1: 0.5788, Precision: 0.5751, Recall: 0.7141
+Train - Zero One Loss: 0.7050, Log Loss: 0.9812
+Valid - F1: 0.5919, Precision: 0.5827, Recall: 0.7362
+Valid - Zero One Loss: 0.6700, Log Loss: 0.9071
+
+-------------------- Summary for Korean --------------------
+Train - F1: 0.5812, Precision: 0.5766, Recall: 0.7195
+Train - Zero One Loss: 0.6980, Log Loss: 0.9803
+Valid - F1: 0.5824, Precision: 0.5774, Recall: 0.7213
+Valid - Zero One Loss: 0.6980, Log Loss: 0.9834
+
+==================== Processing Language: Polish ====================
+
+Processing fold 0 for Polish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Polish:
+Train - F1: 0.5921, Precision: 0.5840, Recall: 0.7479
+Train - Zero One Loss: 0.7325, Log Loss: 1.0605
+Valid - F1: 0.6080, Precision: 0.5966, Recall: 0.7915
+Valid - Zero One Loss: 0.6500, Log Loss: 1.0377
+
+Processing fold 1 for Polish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Polish:
+Train - F1: 0.6008, Precision: 0.5897, Recall: 0.7615
+Train - Zero One Loss: 0.7275, Log Loss: 1.0802
+Valid - F1: 0.5775, Precision: 0.5759, Recall: 0.7355
+Valid - Zero One Loss: 0.6800, Log Loss: 1.0877
+
+Processing fold 2 for Polish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Polish:
+Train - F1: 0.5971, Precision: 0.5872, Recall: 0.7569
+Train - Zero One Loss: 0.7075, Log Loss: 1.0594
+Valid - F1: 0.5939, Precision: 0.5849, Recall: 0.7439
+Valid - Zero One Loss: 0.7600, Log Loss: 1.1422
+
+Processing fold 3 for Polish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Polish:
+Train - F1: 0.5928, Precision: 0.5845, Recall: 0.7503
+Train - Zero One Loss: 0.7200, Log Loss: 1.0494
+Valid - F1: 0.6134, Precision: 0.5976, Recall: 0.7750
+Valid - Zero One Loss: 0.7100, Log Loss: 1.0381
+
+Processing fold 4 for Polish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Polish:
+Train - F1: 0.5987, Precision: 0.5885, Recall: 0.7590
+Train - Zero One Loss: 0.7025, Log Loss: 1.0671
+Valid - F1: 0.5883, Precision: 0.5797, Recall: 0.7321
+Valid - Zero One Loss: 0.7900, Log Loss: 1.0198
+
+-------------------- Summary for Polish --------------------
+Train - F1: 0.5963, Precision: 0.5868, Recall: 0.7551
+Train - Zero One Loss: 0.7180, Log Loss: 1.0633
+Valid - F1: 0.5962, Precision: 0.5869, Recall: 0.7556
+Valid - Zero One Loss: 0.7180, Log Loss: 1.0651
+
+==================== Processing Language: Thai ====================
+
+Processing fold 0 for Thai
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Thai:
+Train - F1: 0.5725, Precision: 0.5667, Recall: 0.7422
+Train - Zero One Loss: 0.7875, Log Loss: 0.8209
+Valid - F1: 0.5737, Precision: 0.5680, Recall: 0.7522
+Valid - Zero One Loss: 0.7000, Log Loss: 0.8126
+
+Processing fold 1 for Thai
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Thai:
+Train - F1: 0.5734, Precision: 0.5671, Recall: 0.7427
+Train - Zero One Loss: 0.7575, Log Loss: 0.8091
+Valid - F1: 0.5790, Precision: 0.5706, Recall: 0.7557
+Valid - Zero One Loss: 0.8200, Log Loss: 0.8302
+
+Processing fold 2 for Thai
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Thai:
+Train - F1: 0.5711, Precision: 0.5656, Recall: 0.7387
+Train - Zero One Loss: 0.7675, Log Loss: 0.8243
+Valid - F1: 0.5821, Precision: 0.5737, Recall: 0.7679
+Valid - Zero One Loss: 0.7600, Log Loss: 0.7951
+
+Processing fold 3 for Thai
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Thai:
+Train - F1: 0.5761, Precision: 0.5689, Recall: 0.7506
+Train - Zero One Loss: 0.7575, Log Loss: 0.8139
+Valid - F1: 0.5674, Precision: 0.5630, Recall: 0.7236
+Valid - Zero One Loss: 0.8200, Log Loss: 0.8662
+
+Processing fold 4 for Thai
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Thai:
+Train - F1: 0.5755, Precision: 0.5689, Recall: 0.7507
+Train - Zero One Loss: 0.7775, Log Loss: 0.8216
+Valid - F1: 0.5619, Precision: 0.5594, Recall: 0.7179
+Valid - Zero One Loss: 0.7400, Log Loss: 0.7919
+
+-------------------- Summary for Thai --------------------
+Train - F1: 0.5737, Precision: 0.5674, Recall: 0.7450
+Train - Zero One Loss: 0.7695, Log Loss: 0.8180
+Valid - F1: 0.5728, Precision: 0.5669, Recall: 0.7435
+Valid - Zero One Loss: 0.7680, Log Loss: 0.8192
+
+==================== Processing Language: Turkish ====================
+
+Processing fold 0 for Turkish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Turkish:
+Train - F1: 0.5968, Precision: 0.5893, Recall: 0.7580
+Train - Zero One Loss: 0.7275, Log Loss: 1.1991
+Valid - F1: 0.6062, Precision: 0.5976, Recall: 0.7902
+Valid - Zero One Loss: 0.6400, Log Loss: 1.1822
+
+Processing fold 1 for Turkish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Turkish:
+Train - F1: 0.5988, Precision: 0.5912, Recall: 0.7643
+Train - Zero One Loss: 0.7075, Log Loss: 1.2171
+Valid - F1: 0.6073, Precision: 0.5938, Recall: 0.7625
+Valid - Zero One Loss: 0.7200, Log Loss: 1.1675
+
+Processing fold 2 for Turkish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Turkish:
+Train - F1: 0.6010, Precision: 0.5917, Recall: 0.7640
+Train - Zero One Loss: 0.7125, Log Loss: 1.1926
+Valid - F1: 0.6020, Precision: 0.5943, Recall: 0.7700
+Valid - Zero One Loss: 0.7100, Log Loss: 1.1984
+
+Processing fold 3 for Turkish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Turkish:
+Train - F1: 0.6053, Precision: 0.5948, Recall: 0.7719
+Train - Zero One Loss: 0.6825, Log Loss: 1.1992
+Valid - F1: 0.5836, Precision: 0.5807, Recall: 0.7338
+Valid - Zero One Loss: 0.8100, Log Loss: 1.3498
+
+Processing fold 4 for Turkish
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Turkish:
+Train - F1: 0.5994, Precision: 0.5912, Recall: 0.7630
+Train - Zero One Loss: 0.7175, Log Loss: 1.1932
+Valid - F1: 0.6026, Precision: 0.5924, Recall: 0.7666
+Valid - Zero One Loss: 0.6700, Log Loss: 1.1173
+
+-------------------- Summary for Turkish --------------------
+Train - F1: 0.6003, Precision: 0.5916, Recall: 0.7642
+Train - Zero One Loss: 0.7095, Log Loss: 1.2002
+Valid - F1: 0.6003, Precision: 0.5918, Recall: 0.7646
+Valid - Zero One Loss: 0.7100, Log Loss: 1.2030
+
+==================== Processing Language: Czech ====================
+
+Processing fold 0 for Czech
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Czech:
+Train - F1: 0.5778, Precision: 0.5748, Recall: 0.7276
+Train - Zero One Loss: 0.7500, Log Loss: 1.0254
+Valid - F1: 0.5940, Precision: 0.5869, Recall: 0.7693
+Valid - Zero One Loss: 0.6300, Log Loss: 0.9837
+
+Processing fold 1 for Czech
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Czech:
+Train - F1: 0.5849, Precision: 0.5797, Recall: 0.7410
+Train - Zero One Loss: 0.7325, Log Loss: 1.0526
+Valid - F1: 0.5669, Precision: 0.5674, Recall: 0.7123
+Valid - Zero One Loss: 0.7200, Log Loss: 0.9935
+
+Processing fold 2 for Czech
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Czech:
+Train - F1: 0.5788, Precision: 0.5755, Recall: 0.7329
+Train - Zero One Loss: 0.7250, Log Loss: 1.0271
+Valid - F1: 0.5916, Precision: 0.5845, Recall: 0.7453
+Valid - Zero One Loss: 0.7400, Log Loss: 1.0447
+
+Processing fold 3 for Czech
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Czech:
+Train - F1: 0.5843, Precision: 0.5792, Recall: 0.7403
+Train - Zero One Loss: 0.7250, Log Loss: 1.0284
+Valid - F1: 0.5736, Precision: 0.5712, Recall: 0.7149
+Valid - Zero One Loss: 0.7600, Log Loss: 1.1006
+
+Processing fold 4 for Czech
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Czech:
+Train - F1: 0.5818, Precision: 0.5773, Recall: 0.7338
+Train - Zero One Loss: 0.7150, Log Loss: 1.0252
+Valid - F1: 0.5818, Precision: 0.5777, Recall: 0.7393
+Valid - Zero One Loss: 0.8000, Log Loss: 1.0407
+
+-------------------- Summary for Czech --------------------
+Train - F1: 0.5815, Precision: 0.5773, Recall: 0.7351
+Train - Zero One Loss: 0.7295, Log Loss: 1.0317
+Valid - F1: 0.5816, Precision: 0.5775, Recall: 0.7362
+Valid - Zero One Loss: 0.7300, Log Loss: 1.0326
+
+==================== Processing Language: Chinese ====================
+
+Processing fold 0 for Chinese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Chinese:
+Train - F1: 0.5723, Precision: 0.5669, Recall: 0.7108
+Train - Zero One Loss: 0.7100, Log Loss: 0.9027
+Valid - F1: 0.5721, Precision: 0.5689, Recall: 0.7300
+Valid - Zero One Loss: 0.7500, Log Loss: 0.9045
+
+Processing fold 1 for Chinese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Chinese:
+Train - F1: 0.5770, Precision: 0.5704, Recall: 0.7232
+Train - Zero One Loss: 0.7175, Log Loss: 0.9103
+Valid - F1: 0.5612, Precision: 0.5585, Recall: 0.6819
+Valid - Zero One Loss: 0.7200, Log Loss: 0.9486
+
+Processing fold 2 for Chinese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Chinese:
+Train - F1: 0.5758, Precision: 0.5691, Recall: 0.7196
+Train - Zero One Loss: 0.7150, Log Loss: 0.9091
+Valid - F1: 0.5582, Precision: 0.5593, Recall: 0.6872
+Valid - Zero One Loss: 0.7100, Log Loss: 0.9826
+
+Processing fold 3 for Chinese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Chinese:
+Train - F1: 0.5728, Precision: 0.5674, Recall: 0.7131
+Train - Zero One Loss: 0.7050, Log Loss: 0.9081
+Valid - F1: 0.5784, Precision: 0.5705, Recall: 0.7184
+Valid - Zero One Loss: 0.7400, Log Loss: 0.9262
+
+Processing fold 4 for Chinese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Chinese:
+Train - F1: 0.5676, Precision: 0.5646, Recall: 0.7063
+Train - Zero One Loss: 0.7300, Log Loss: 0.9081
+Valid - F1: 0.5929, Precision: 0.5798, Recall: 0.7524
+Valid - Zero One Loss: 0.6700, Log Loss: 0.7968
+
+-------------------- Summary for Chinese --------------------
+Train - F1: 0.5731, Precision: 0.5677, Recall: 0.7146
+Train - Zero One Loss: 0.7155, Log Loss: 0.9077
+Valid - F1: 0.5726, Precision: 0.5674, Recall: 0.7140
+Valid - Zero One Loss: 0.7180, Log Loss: 0.9117
+
+==================== Processing Language: Portuguese ====================
+
+Processing fold 0 for Portuguese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Portuguese:
+Train - F1: 0.5866, Precision: 0.5767, Recall: 0.7672
+Train - Zero One Loss: 0.7400, Log Loss: 0.9191
+Valid - F1: 0.5789, Precision: 0.5719, Recall: 0.7614
+Valid - Zero One Loss: 0.7100, Log Loss: 0.9201
+
+Processing fold 1 for Portuguese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Portuguese:
+Train - F1: 0.5802, Precision: 0.5733, Recall: 0.7626
+Train - Zero One Loss: 0.7375, Log Loss: 0.9173
+Valid - F1: 0.5998, Precision: 0.5844, Recall: 0.7884
+Valid - Zero One Loss: 0.7500, Log Loss: 0.8784
+
+Processing fold 2 for Portuguese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Portuguese:
+Train - F1: 0.5883, Precision: 0.5778, Recall: 0.7748
+Train - Zero One Loss: 0.7300, Log Loss: 0.9239
+Valid - F1: 0.5747, Precision: 0.5684, Recall: 0.7324
+Valid - Zero One Loss: 0.7600, Log Loss: 0.9979
+
+Processing fold 3 for Portuguese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Portuguese:
+Train - F1: 0.5813, Precision: 0.5731, Recall: 0.7578
+Train - Zero One Loss: 0.7325, Log Loss: 0.9057
+Valid - F1: 0.5967, Precision: 0.5853, Recall: 0.8046
+Valid - Zero One Loss: 0.7500, Log Loss: 0.8911
+
+Processing fold 4 for Portuguese
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Portuguese:
+Train - F1: 0.5866, Precision: 0.5768, Recall: 0.7682
+Train - Zero One Loss: 0.7375, Log Loss: 0.9293
+Valid - F1: 0.5792, Precision: 0.5718, Recall: 0.7574
+Valid - Zero One Loss: 0.7200, Log Loss: 0.9168
+
+-------------------- Summary for Portuguese --------------------
+Train - F1: 0.5846, Precision: 0.5755, Recall: 0.7661
+Train - Zero One Loss: 0.7355, Log Loss: 0.9191
+Valid - F1: 0.5859, Precision: 0.5764, Recall: 0.7688
+Valid - Zero One Loss: 0.7380, Log Loss: 0.9209
+
+==================== Processing Language: Arabic ====================
+
+Processing fold 0 for Arabic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Arabic:
+Train - F1: 0.5861, Precision: 0.5772, Recall: 0.7466
+Train - Zero One Loss: 0.7300, Log Loss: 0.8844
+Valid - F1: 0.5945, Precision: 0.5827, Recall: 0.7624
+Valid - Zero One Loss: 0.6200, Log Loss: 0.8194
+
+Processing fold 1 for Arabic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Arabic:
+Train - F1: 0.5885, Precision: 0.5786, Recall: 0.7487
+Train - Zero One Loss: 0.7000, Log Loss: 0.8958
+Valid - F1: 0.5875, Precision: 0.5782, Recall: 0.7557
+Valid - Zero One Loss: 0.7400, Log Loss: 0.8864
+
+Processing fold 2 for Arabic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Arabic:
+Train - F1: 0.5869, Precision: 0.5777, Recall: 0.7494
+Train - Zero One Loss: 0.7050, Log Loss: 0.8847
+Valid - F1: 0.5913, Precision: 0.5799, Recall: 0.7437
+Valid - Zero One Loss: 0.7200, Log Loss: 0.9209
+
+Processing fold 3 for Arabic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Arabic:
+Train - F1: 0.5915, Precision: 0.5803, Recall: 0.7540
+Train - Zero One Loss: 0.6975, Log Loss: 0.8770
+Valid - F1: 0.5796, Precision: 0.5728, Recall: 0.7292
+Valid - Zero One Loss: 0.7500, Log Loss: 0.9699
+
+Processing fold 4 for Arabic
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Arabic:
+Train - F1: 0.5879, Precision: 0.5783, Recall: 0.7485
+Train - Zero One Loss: 0.7075, Log Loss: 0.8870
+Valid - F1: 0.5865, Precision: 0.5778, Recall: 0.7545
+Valid - Zero One Loss: 0.7100, Log Loss: 0.8440
+
+-------------------- Summary for Arabic --------------------
+Train - F1: 0.5882, Precision: 0.5784, Recall: 0.7494
+Train - Zero One Loss: 0.7080, Log Loss: 0.8858
+Valid - F1: 0.5879, Precision: 0.5783, Recall: 0.7491
+Valid - Zero One Loss: 0.7080, Log Loss: 0.8881
+
+==================== Processing Language: Russian ====================
+
+Processing fold 0 for Russian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 0 results for Russian:
+Train - F1: 0.6109, Precision: 0.5947, Recall: 0.7727
+Train - Zero One Loss: 0.6475, Log Loss: 1.0299
+Valid - F1: 0.6186, Precision: 0.6011, Recall: 0.8008
+Valid - Zero One Loss: 0.6900, Log Loss: 1.0157
+
+Processing fold 1 for Russian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 1 results for Russian:
+Train - F1: 0.6128, Precision: 0.5964, Recall: 0.7794
+Train - Zero One Loss: 0.6525, Log Loss: 1.0229
+Valid - F1: 0.6152, Precision: 0.5995, Recall: 0.8029
+Valid - Zero One Loss: 0.6600, Log Loss: 0.9980
+
+Processing fold 2 for Russian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 2 results for Russian:
+Train - F1: 0.6109, Precision: 0.5951, Recall: 0.7790
+Train - Zero One Loss: 0.6575, Log Loss: 1.0115
+Valid - F1: 0.6206, Precision: 0.6020, Recall: 0.7879
+Valid - Zero One Loss: 0.6400, Log Loss: 1.0329
+
+Processing fold 3 for Russian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 3 results for Russian:
+Train - F1: 0.6128, Precision: 0.5964, Recall: 0.7817
+Train - Zero One Loss: 0.6575, Log Loss: 1.0156
+Valid - F1: 0.6089, Precision: 0.5931, Recall: 0.7632
+Valid - Zero One Loss: 0.6400, Log Loss: 1.0466
+
+Processing fold 4 for Russian
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+Langauge Feature Started
+Langauge Feature Ended
+Graph Features Creation Started
+Graph Feature Creation Ended
+Node Features Creation Started
+Node Features Creation Ended
+DataFrame Creation Started
+DataFrame Creation Ended!!
+
+Fold 4 results for Russian:
+Train - F1: 0.6144, Precision: 0.5978, Recall: 0.7849
+Train - Zero One Loss: 0.6575, Log Loss: 1.0263
+Valid - F1: 0.6047, Precision: 0.5900, Recall: 0.7630
+Valid - Zero One Loss: 0.6500, Log Loss: 1.0172
+
+-------------------- Summary for Russian --------------------
+Train - F1: 0.6123, Precision: 0.5961, Recall: 0.7796
+Train - Zero One Loss: 0.6545, Log Loss: 1.0212
+Valid - F1: 0.6136, Precision: 0.5972, Recall: 0.7836
+Valid - Zero One Loss: 0.6560, Log Loss: 1.0221
+
+***************Final Summary***************
+
+Average metrics across all languages:
+Train - F1: 0.5811, Precision: 0.5744, Recall: 0.7384
+Train - Zero One Loss: 0.7404, Log Loss: 0.9413
+Valid - F1: 0.5813, Precision: 0.5746, Recall: 0.7390
+Valid - Zero One Loss: 0.7403, Log Loss: 0.9429
+--------------------------------------------------------------------------------
+Training completed at: 2025-05-13 22:56:36

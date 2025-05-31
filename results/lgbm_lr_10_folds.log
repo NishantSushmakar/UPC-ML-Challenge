@@ -1,0 +1,180 @@
+Average Metrics Across Folds:
+
+Training Metrics:
+Precision: 0.7626 ± 0.0030
+Recall: 0.6001 ± 0.0025
+F1 Score: 0.6398 ± 0.0030
+ROC AUC: 0.9041 ± 0.0012
+Zero One Loss: 0.5734 ± 0.0027
+Log Loss: 0.1456 ± 0.0006
+
+Validation Metrics:
+Precision: 0.7266 ± 0.0186
+Recall: 0.5829 ± 0.0111
+F1 Score: 0.6158 ± 0.0140
+ROC AUC: 0.8662 ± 0.0081
+Zero One Loss: 0.6264 ± 0.0273
+Log Loss: 0.1601 ± 0.0063
+
+
+Per-fold results:
+
+Fold 0:
+Training Metrics:
+  Precision: 0.7581
+  Recall: 0.5993
+  F1 Score: 0.6383
+  ROC AUC: 0.9055
+  Zero One Loss: 0.5717
+  Log Loss: 0.1454
+Validation Metrics:
+  Precision: 0.7319
+  Recall: 0.5763
+  F1 Score: 0.6090
+  ROC AUC: 0.8561
+  Zero One Loss: 0.6410
+  Log Loss: 0.1573
+
+Fold 1:
+Training Metrics:
+  Precision: 0.7648
+  Recall: 0.5988
+  F1 Score: 0.6385
+  ROC AUC: 0.9025
+  Zero One Loss: 0.5758
+  Log Loss: 0.1463
+Validation Metrics:
+  Precision: 0.7316
+  Recall: 0.5877
+  F1 Score: 0.6221
+  ROC AUC: 0.8787
+  Zero One Loss: 0.5800
+  Log Loss: 0.1559
+
+Fold 2:
+Training Metrics:
+  Precision: 0.7683
+  Recall: 0.6055
+  F1 Score: 0.6464
+  ROC AUC: 0.9035
+  Zero One Loss: 0.5707
+  Log Loss: 0.1460
+Validation Metrics:
+  Precision: 0.7263
+  Recall: 0.5784
+  F1 Score: 0.6110
+  ROC AUC: 0.8613
+  Zero One Loss: 0.6667
+  Log Loss: 0.1562
+
+Fold 3:
+Training Metrics:
+  Precision: 0.7652
+  Recall: 0.5998
+  F1 Score: 0.6398
+  ROC AUC: 0.9031
+  Zero One Loss: 0.5713
+  Log Loss: 0.1450
+Validation Metrics:
+  Precision: 0.7119
+  Recall: 0.5820
+  F1 Score: 0.6132
+  ROC AUC: 0.8699
+  Zero One Loss: 0.6086
+  Log Loss: 0.1691
+
+Fold 4:
+Training Metrics:
+  Precision: 0.7646
+  Recall: 0.6010
+  F1 Score: 0.6410
+  ROC AUC: 0.9066
+  Zero One Loss: 0.5705
+  Log Loss: 0.1445
+Validation Metrics:
+  Precision: 0.6883
+  Recall: 0.5662
+  F1 Score: 0.5922
+  ROC AUC: 0.8527
+  Zero One Loss: 0.6543
+  Log Loss: 0.1727
+
+Fold 5:
+Training Metrics:
+  Precision: 0.7608
+  Recall: 0.5974
+  F1 Score: 0.6365
+  ROC AUC: 0.9045
+  Zero One Loss: 0.5777
+  Log Loss: 0.1455
+Validation Metrics:
+  Precision: 0.7466
+  Recall: 0.6082
+  F1 Score: 0.6461
+  ROC AUC: 0.8621
+  Zero One Loss: 0.6095
+  Log Loss: 0.1592
+
+Fold 6:
+Training Metrics:
+  Precision: 0.7614
+  Recall: 0.6035
+  F1 Score: 0.6433
+  ROC AUC: 0.9037
+  Zero One Loss: 0.5711
+  Log Loss: 0.1463
+Validation Metrics:
+  Precision: 0.7255
+  Recall: 0.5814
+  F1 Score: 0.6144
+  ROC AUC: 0.8673
+  Zero One Loss: 0.6276
+  Log Loss: 0.1548
+
+Fold 7:
+Training Metrics:
+  Precision: 0.7610
+  Recall: 0.5996
+  F1 Score: 0.6390
+  ROC AUC: 0.9038
+  Zero One Loss: 0.5772
+  Log Loss: 0.1448
+Validation Metrics:
+  Precision: 0.7342
+  Recall: 0.5930
+  F1 Score: 0.6280
+  ROC AUC: 0.8762
+  Zero One Loss: 0.6133
+  Log Loss: 0.1644
+
+Fold 8:
+Training Metrics:
+  Precision: 0.7589
+  Recall: 0.5998
+  F1 Score: 0.6389
+  ROC AUC: 0.9049
+  Zero One Loss: 0.5753
+  Log Loss: 0.1461
+Validation Metrics:
+  Precision: 0.7110
+  Recall: 0.5719
+  F1 Score: 0.6017
+  ROC AUC: 0.8636
+  Zero One Loss: 0.6619
+  Log Loss: 0.1599
+
+Fold 9:
+Training Metrics:
+  Precision: 0.7628
+  Recall: 0.5969
+  F1 Score: 0.6361
+  ROC AUC: 0.9034
+  Zero One Loss: 0.5722
+  Log Loss: 0.1462
+Validation Metrics:
+  Precision: 0.7586
+  Recall: 0.5838
+  F1 Score: 0.6205
+  ROC AUC: 0.8741
+  Zero One Loss: 0.6010
+  Log Loss: 0.1519
