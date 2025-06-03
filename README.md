@@ -22,12 +22,21 @@ free trees. The task is framed as a binary classification problem where each nod
    ```bash
    cd scripts
 
-3. Run the `training.py` script to train the model. You can choose which model to train by uncommenting the corresponding line near the end of the script (e.g., `'lr'` for Logistic Regression, `'lgbm_zero_one_loss'` for LightGBM with zero-one loss, `'xgb_logloss'` for XGBoost with log loss).
+3. Run the `training.py` script to train the model. You can choose which model to train by uncommenting the corresponding line near the end of the script (e.g., `'lr'` for Logistic Regression, `'lgbm_zero_one_loss'` for LightGBM with zero-one loss, `'xgb_logloss'` for XGBoost with log loss). The current uncommented one is our best-performing model.
 
    To train the model:
 
    ```bash
    python training.py
+   ```
+   
+   **Note: Random Forest Models**  
+      To train Random Forest variants:
+      
+      ```bash
+      cd scripts/RF
+      python training.py
+      ```
 
 4. The cross-validation results will be displayed in the terminal and saved to a file in the `results` directory.
 
